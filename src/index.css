@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "CrimsonPro-regular";
+  src: url("./fonts/CrimsonPro-Regular.ttf");
+}
+@font-face {
+  font-family: "CrimsonPro-semibold";
+  src: url("./fonts/CrimsonPro-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "FiraSans-regular";
+  src: url("./fonts/FiraSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "FiraSans-semibold";
+  src: url("./fonts/FiraSans-SemiBold.ttf");
+}
+
+:root {
+  background-color: #F0F0EF;
+  color: #282B26;
+}
+
+.navbar-text {
+  color: #4B4B4B;
+}
+
+.header-text {
+  @apply text-5xl font-semibold leading-normal
+}
