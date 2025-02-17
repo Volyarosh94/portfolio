@@ -9,7 +9,7 @@ import Approach from './sections/Approach'
 function App() {
 
   return (
-    <div className="mx-auto max-w-[980px] lg:w-[980px] md:w-[600px] md:ml-[150px]">
+    <div className="mx-auto max-w-[980px] lg:w-[980px] md:w-[650px]">
       <Header />
       <Approach />
       <Experience />
