@@ -8,10 +8,10 @@ const Work = () => {
                 {[1, 2, 3, 4, 5].map((index) => (
                     <div key={index} className="bg-[#F9F9F9] rounded-2xl p-8 shadow-lg">
                         <div className="flex flex-col md:flex-row gap-16">
-                            <div className="w-full md:w-[50%] max-sm:order-2">
+                            <div className="w-full md:w-[50%] max-sm:order-2 max-md:order-2">
                                 <ImageList index={index} />
                             </div>
-                            <div className="w-full md:w-[50%] max-sm:order-1">
+                            <div className="w-full md:w-[50%] max-sm:order-1 max-md:order-1">
                                 <CardList index={index} />
                             </div>
                         </div>

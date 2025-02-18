@@ -11,25 +11,25 @@ const Outcomes = () => {
             <div className="mt-[20px] lg:py-8 lg:w-[600px] md:w-[550px] md:py-2 lg:relative">
                 <div className="grid grid-cols-3 max-sm:grid-cols-2 lg:gap-[90px] md:gap-[40px]">
                     <div className="flex flex-col items-center">
-                        <h2 className="lg:text-5xl font-bold font-crimsonProSemi md:text-3xl max-sm:text-3xl">3M+</h2>
+                        <h2 className="lg:text-5xl font-bold font-crimsonProSemi max-md:text-4xl md:text-3xl max-sm:text-3xl">3M+</h2>
                         <p className="mt-1 text-gray-600 md:text-sm max-sm:text-[10px] font-firaSansRegular">Euros Raised</p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <h2 className="lg:text-5xl font-bold font-crimsonProSemi md:text-3xl max-sm:text-3xl">9M+</h2>
+                        <h2 className="lg:text-5xl font-bold font-crimsonProSemi max-md:text-4xl md:text-3xl max-sm:text-3xl">9M+</h2>
                         <p className="mt-1 text-gray-600 md:text-sm max-sm:text-[10px] font-firaSansRegular">Users Served</p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <h2 className="lg:text-5xl font-bold font-crimsonProSemi md:text-3xl max-sm:text-3xl">4.8</h2>
+                        <h2 className="lg:text-5xl font-bold font-crimsonProSemi max-md:text-4xl md:text-3xl max-sm:text-3xl">4.8</h2>
                         <p className="mt-1 text-gray-600 md:text-sm max-sm:text-[10px] font-firaSansRegular">Ø App Store Rating</p>
                     </div>
-                    <div className="lg:col-span-3 md:col-span-3 flex flex-col items-center">
-                        <h2 className="lg:text-5xl font-bold font-crimsonProSemi md:text-3xl max-sm:text-3xl">-28%</h2>
+                    <div className="lg:col-span-3 md:col-span-3 max-md:col-span-3 max-md:mt-[20px] flex flex-col items-center">
+                        <h2 className="lg:text-5xl font-bold font-crimsonProSemi max-md:text-4xl md:text-3xl max-sm:text-3xl">-28%</h2>
                         <p className="mt-1 text-gray-600 md:text-sm max-sm:text-[10px] font-firaSansRegular">Household Energy Consumption</p>
                     </div>
                 </div>
                 <div>
                     <img
-                        className='max-sm:w-[150px] max-sm:h-[100px] max-sm:ml-[70px] max-sm:mt-[20px] lg:w-[200px] lg:h-[130px] md:w-[200px] md:h-[130px] lg:absolute lg:left-[450px] lg:top-[200px] '
+                        className='max-sm:w-[150px] max-sm:h-[100px] max-md:w-[220px] max-md:h-[140px] max-sm:ml-[70px] max-sm:mt-[20px] lg:w-[200px] lg:h-[130px] md:w-[200px] md:h-[130px] lg:absolute lg:left-[70%] lg:top-[65%]'
                         src={square} alt="An interactive whiteboard style yellow sticky note over-which three cursors pointing to the outcome values: an orange cursor labeled 'Business' at the top, a purple cursor labeled 'People' on the left, and a blue cursor labeled 'Planet' on the right." />
                 </div>
             </div >

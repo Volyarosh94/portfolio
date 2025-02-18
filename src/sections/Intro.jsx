@@ -4,14 +4,14 @@ const Intro = () => {
     return (
         <div>
             <div id="intro" className='flex-1 mx-auto max-w-[700px] max-sm:w-[380px]'>
-                <h1 className='tracking-[5px] font-crimsonProSemi lg:text-[85px] md:text-[50px] max-sm:text-[40px] mb-8 mt-[55px] text-left md:text-[70px]'>
+                <h1 className='tracking-[5px] max-md:text-[80px] font-crimsonProSemi lg:text-[85px] md:text-[50px] max-sm:text-[40px] mb-8 mt-[55px] text-left md:text-[70px]'>
                     <span>Regenerative</span>
                     <br />
                     <span>Product Designer</span>
                 </h1>
 
                 <div className='lg:flex sm:flex-col sm:items-center lg:flex-row lg:w-[700px] md:w-[650px] lg:gap-[100px] md:gap-[40px] mb-6 max-sm:justify-start'>
-                    <div className='max-sm:flex max-sm:flex-col max-sm:items-center md:flex md:justify-center md:mb-[30px]'>
+                    <div className='max-sm:flex max-sm:flex-col max-md:flex max-md:mb-[50px] max-md:justify-center max-md:items-center max-sm:items-center md:flex md:justify-center md:mb-[30px]'>
                         <img className="lg:w-[120px] max-sm:ml-[0px] lg:h-[120px] md:w-[320px] md:h-[300px] max-sm:w-[250px] max-sm:h-[250px]" src={portrait} alt="A circular profile photo of charles thorburn with a yellow border, being drawn by an interactive whiteboard style pencil icon. The photo shows charles wearing a black t-shirt, against a light background." />
                     </div>
                     <p className='max-sm:text-left lg:text-[16px] max-sm:text-full lg:max-w-xl lg:w-[500px] md:w-[650px] text-left lg:text-md text-md font-firaSansRegular leading-relaxed text-[282B26] max-sm:pt-[60px]'>

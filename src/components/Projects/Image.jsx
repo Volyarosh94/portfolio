@@ -1,8 +1,8 @@
 const Image = ({ image1, image2, layout }) => {
     if (layout === "column") {
         return (
-            <div className="flex flex-col gap-4 max-sm:gap-0 max-sm:items-center">
-                <div className="w-[300px] h-[320px] max-sm:w-[230px] max-sm:h-[200px] flex justify-center items-center">
+            <div className="flex flex-col gap-4 max-sm:gap-0 max-md:items-center">
+                <div className="w-[300px] h-[320px] max-md:w-[380px] max-md:h-[250px] max-sm:w-[230px] max-sm:h-[200px] flex justify-center items-center">
                     <img
                         className="w-full h-full object-contain rounded-xl max-sm:flex max-sm:justify-center max-sm:items-center"
                         src={image1}
@@ -36,7 +36,7 @@ const Image = ({ image1, image2, layout }) => {
 
     if (layout === "columnTwo") {
         return (
-            <div className="flex flex-col gap-4 max-sm:flex-row max-sm:gap-2 max-sm:justify-center max-sm:items-center">
+            <div className="flex flex-col gap-4 max-md:flex-row max-md:gap-2 max-md:justify-center max-md:items-center">
                 <div className="w-[250px] h-[150px] mb-6 max-sm:w-[180px] max-sm:h-[100px] max-sm:px-4">
                     <img
                         className="w-full h-full object-cover"
@@ -57,8 +57,8 @@ const Image = ({ image1, image2, layout }) => {
 
     if (layout === "One") {
         return (
-            <div className="flex flex-col gap-4 pl-[80px]">
-                <div className="lg:w-[370px] lg:h-[340px] max-sm:w-[260px] max-sm:h-[230px] md:w-[360px] md:h-[350px]">
+            <div className="flex flex-col gap-4 pl-[80px] max-md:flex max-md:justify-center max-md:items-center">
+                <div className="lg:w-[370px] lg:h-[340px]  max-md:w-[370px] max-md:h-[320px] max-sm:w-[260px] max-sm:h-[230px] md:w-[360px] md:h-[350px]">
                     <img
                         className="w-full h-full object-cover rounded-xl"
                         src={image1}
@@ -71,15 +71,15 @@ const Image = ({ image1, image2, layout }) => {
 
 
     return (
-        <div className="flex gap-4 h-[320px]">
-            <div className="w-1/2">
+        <div className="flex gap-4 h-[320px] max-md:flex max-md:justify-center max-md:items-center max-md:gap-8">
+            <div className="lg:w-1/2">
                 <img
                     className=" h-[320px] rounded-xl"
                     src={image1}
                     alt="An image showing two side-by-side screenshots of the tado app. The left image shows the 'Balance' feature, currently focused on how water, as apposed to room heating, which the user can navigate to via a segmented control at the top of the page. A graph shoes the daily balance interventions alongside the temperature set point and cost of heating value, and the photovoltaic activity (PV). The second screen shows an orange screen with white text — the room heating screen, with the set point temperature and a large slider element for manual adjustments. Below the slider the user has the option to return 'to the schedule' via a button, and information about when their manually set set point will return to the schedule. "
                 />
             </div>
-            <div className="w-1/2">
+            <div className="lg:w-1/2">
                 <img
                     className="h-[320px]  rounded-xl"
                     src={image2}

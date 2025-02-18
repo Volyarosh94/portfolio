@@ -91,7 +91,7 @@ const Navbar = () => {
           </ul>
         </div>
       )}
-      <nav className="lg:fixed lg:left-0 lg:top-0 lg:h-screen lg:w-64 navbar-text text-white lg:p-6 lg:text-left lg:ml-[50px] md:ml-[25px] md:mt-[10px] hidden lg:block">
+      <nav className="lg:fixed lg:left-0 lg:top-0 lg:h-screen lg:w-64 navbar-text text-white lg:p-6 lg:text-left lg:ml-[20px] md:ml-[25px] md:mt-[10px] hidden lg:block">
         <div className="group inline-flex items-center space-x-2 cursor-pointer"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
