@@ -2,7 +2,7 @@ import approach from '../assets/Appr.png'
 
 const Approach = () => {
     return (
-        <div id="approach" className="text-left mx-auto mt-[150px] max-w-[700px] md:w-[650px] w-full max-sm:w-[355px]">
+        <div id="approach" className="text-left mx-auto mt-[150px] max-w-[700px] md:w-[650px] w-full max-sm:w-[360px]">
             <div className="mb-4 font-normal leading-relaxed text-[#282B26] lg:w-[700px] lg:text-md text-md font-firaSansRegular leading-normal md:w-[650px]">
                 <p>I collaborate with cross-functional teams through continuous discovery to build a deep understanding of the problem space, so we can deliver product outcomes that are viable, valuable, feasible, usable and ethical.</p>
             </div>
