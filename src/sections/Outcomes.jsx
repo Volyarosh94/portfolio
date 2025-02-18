@@ -8,7 +8,7 @@ const Outcomes = () => {
                     Product design should always deliver value. Here are some key outcomes I contributed towards on my product design journey so far.
                 </p>
             </div>
-            <div className="mt-[20px] lg:p-8 lg:w-[700px] md:w-[650px] md:p-2 lg:relative">
+            <div className="mt-[20px] lg:py-8 lg:w-[600px] md:w-[550px] md:py-2 lg:relative">
                 <div className="grid grid-cols-3 max-sm:grid-cols-2 lg:gap-[90px] md:gap-[40px]">
                     <div className="flex flex-col items-center">
                         <h2 className="lg:text-5xl font-bold font-crimsonProSemi md:text-3xl max-sm:text-3xl">3M+</h2>
@@ -22,7 +22,7 @@ const Outcomes = () => {
                         <h2 className="lg:text-5xl font-bold font-crimsonProSemi md:text-3xl max-sm:text-3xl">4.8</h2>
                         <p className="mt-1 text-gray-600 md:text-sm max-sm:text-[10px]">Ø App Store Rating</p>
                     </div>
-                    <div className=" lg:col-span-3 md:col-start-2 md:col-span-3 flex flex-col items-center">
+                    <div className="lg:col-span-3 md:col-span-3 flex flex-col items-center">
                         <h2 className="lg:text-5xl font-bold font-crimsonProSemi md:text-3xl max-sm:text-3xl">-28%</h2>
                         <p className="mt-1 text-gray-600 md:text-sm max-sm:text-[10px]">Household Energy Consumption</p>
                     </div>
