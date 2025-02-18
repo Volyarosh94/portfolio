@@ -13,7 +13,7 @@ const Experience = () => {
                 </p>
             </div>
             <div className="flex md:ml-[100px] flex-col items-center mt-[40px]">
-                <div className="flex w-full lg:gap-[80px] md:gap-[60px]">
+                <div className="flex w-full lg:gap-[80px] md:gap-[60px] lg:mr-[130px]">
                     <img src={tado} alt="five company logos arranged in two rows: Top row shows N26 (stylized with a line above), Javelin, and Key Ward. Bottom row displays CitizenTech (with a globe icon) and tado° (styled with a degree symbol). All logos are presented in black against a light background." className="lg:h-10 md:h-6 max-md:h-6 mx-2" />
                     <img src={citizenTech} alt="five company logos arranged in two rows: Top row shows N26 (stylized with a line above), Javelin, and Key Ward. Bottom row displays CitizenTech (with a globe icon) and tado° (styled with a degree symbol). All logos are presented in black against a light background." className="lg:h-10 md:h-6 max-md:h-6 mx-2" />
                     <img src={keyWord} alt="five company logos arranged in two rows: Top row shows N26 (stylized with a line above), Javelin, and Key Ward. Bottom row displays CitizenTech (with a globe icon) and tado° (styled with a degree symbol). All logos are presented in black against a light background." className="lg:h-10 md:h-6 max-md:h-6 mx-2" />
