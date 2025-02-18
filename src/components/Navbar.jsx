@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
+  const [isVisible, setIsVisible] = useState(true);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -15,7 +16,13 @@ const Navbar = () => {
   };
 
   useEffect(() => {
+    let lastScrollY = window.scrollY;
+
     const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      setIsVisible(currentScrollY < lastScrollY || currentScrollY < 50);
+      lastScrollY = currentScrollY;
+
       const sections = ["intro", "approach", "experience", "work", "outcomes", "contact"];
       const scrollPosition = window.scrollY;
 
@@ -51,10 +58,11 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="fixed top-0 right-0 p-4 z-20 lg:hidden">
+      <div className="fixed top-0 left-0 p-1 z-20 lg:hidden flex items-center w-full">
+        {isVisible && <h3 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-black text-2xl font-crimsonProSemi">Charles</h3>}
         <button
           onClick={toggleMenu}
-          className={`text-black text-2xl ${isOpen ? "invisible" : "visible"}`}
+          className={`text-black text-2xl ml-auto ${isOpen ? "invisible" : "visible"}`}
         >
           ☰
         </button>
@@ -80,12 +88,12 @@ const Navbar = () => {
           </ul>
         </div>
       )}
-      <nav className="lg:fixed lg:left-0 lg:top-0 lg:h-screen lg:w-64 navbar-text text-white lg:p-6 lg:text-left lg:ml-[80px] md:ml-[50px] md:mt-[10px] hidden lg:block">
-        <div class="group inline-flex items-center space-x-2 cursor-pointer"
+      <nav className="lg:fixed lg:left-0 lg:top-0 lg:h-screen lg:w-64 navbar-text text-white lg:p-6 lg:text-left lg:ml-[50px] md:ml-[25px] md:mt-[10px] hidden lg:block">
+        <div className="group inline-flex items-center space-x-2 cursor-pointer"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
-          <span class="font-bold">Charles</span>
-          <span class="font-bold overflow-hidden transition-all duration-200 w-0 group-hover:w-auto">
+          <span className="font-bold">Charles</span>
+          <span className="font-bold overflow-hidden transition-all duration-200 w-0 group-hover:w-auto">
             Thorburn
           </span>
         </div>

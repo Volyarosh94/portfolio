@@ -10,29 +10,29 @@ import manual from '../../assets/Manual.png';
 
 const ImageInfo = [
     {
-        id: 5,
+        id: 1,
         layout: "One",
         image1: woman,
     },
     {
-        id: 4,
+        id: 2,
         layout: "columnTwo",
         image1: desktop,
         image2: videoPlayer,
     },
     {
-        id: 2,
+        id: 3,
         layout: "column",
         image1: grafics,
     },
     {
-        id: 3,
+        id: 4,
         layout: "phone",
         image1: samsung,
         image2: mySpots,
     },
     {
-        id: 1,
+        id: 5,
         image1: balance,
         image2: manual,
     },

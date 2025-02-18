@@ -6,8 +6,8 @@ const Card = ({ title, text, technologies, logo }) => {
     return (
         <div className="flex flex-col gap-6">
             <div className="space-y-4">
-                <h2 className="text-2xl font-bold text-black text-left mb-2">{title}</h2>
-                <p className="text-md text-gray-700 text-left pb-2 lg:text-lg text-lg font-normal leading-relaxed font-fira-sans">{text}</p>
+                <h2 className="text-2xl font-bold text-black text-left mb-2 font-firaSansRegular">{title}</h2>
+                <p className="text-md text-gray-700 text-left pb-2 lg:text-lg text-lg font-normal leading-relaxed font-crimsonProSemi">{text}</p>
                 <div className="flex flex-wrap gap-2 pb-4">
                     {technologies.map((tech, index) => (
                         <span key={index} className="px-4 py-1 text-sm bg-customGray text-white rounded-[5px]">
