@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,6 +13,41 @@ const Navbar = () => {
     setActiveSection(id);
     setIsOpen(false);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ["intro", "approach", "experience", "work", "outcomes", "contact"];
+      const scrollPosition = window.scrollY;
+
+      sections.forEach((section) => {
+        const sectionElement = document.getElementById(section);
+        if (sectionElement) {
+          const sectionTop = sectionElement.offsetTop;
+          const sectionHeight = sectionElement.clientHeight;
+
+          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            setActiveSection(section);
+          }
+        }
+      });
+
+      const lastSection = sections[sections.length - 1];
+      const lastSectionElement = document.getElementById(lastSection);
+      if (lastSectionElement) {
+        const lastSectionTop = lastSectionElement.offsetTop;
+        const lastSectionHeight = lastSectionElement.clientHeight;
+
+        if (scrollPosition + window.innerHeight >= lastSectionTop + lastSectionHeight) {
+          setActiveSection(lastSection);
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div>
@@ -33,17 +68,15 @@ const Navbar = () => {
             ✖
           </button>
           <ul className="mt-16 space-y-4 text-center">
-            {
-              ["Intro", "Approach", "Experience", "Work", "Outcomes", "Contact"].map((section) => (
-                <li
-                  key={section}
-                  className={`cursor-pointer hover:text-black ${activeSection === section.toLowerCase() ? "text-black font-bold" : ""}`}
-                  onClick={() => scrollToSection(section.toLowerCase())}
-                >
-                  {section.charAt(0).toUpperCase() + section.slice(1)}
-                </li>
-              ))
-            }
+            {["Intro", "Approach", "Experience", "Work", "Outcomes", "Contact"].map((section) => (
+              <li
+                key={section}
+                className={`cursor-pointer hover:text-black ${activeSection.toLowerCase() === section.toLowerCase() ? "text-black font-bold" : ""}`}
+                onClick={() => scrollToSection(section.toLowerCase())}
+              >
+                {section.charAt(0).toUpperCase() + section.slice(1)}
+              </li>
+            ))}
           </ul>
         </div>
       )}
@@ -63,7 +96,7 @@ const Navbar = () => {
             ["Intro", "Approach", "Experience", "Work", "Outcomes", "Contact"].map((section) => (
               <li
                 key={section}
-                className={`cursor-pointer hover:text-black ${activeSection === section.toLowerCase() ? "text-black font-bold" : ""}`}
+                className={`cursor-pointer hover:text-black ${activeSection.toLowerCase() === section.toLowerCase() ? "text-black font-bold" : ""}`}
                 onClick={() => scrollToSection(section.toLowerCase())}
               >
                 {section.charAt(0).toUpperCase() + section.slice(1)}
