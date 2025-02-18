@@ -4,7 +4,7 @@ const Outcomes = () => {
     return (
         <div id="outcomes" className="text-left mx-auto mt-[150px] max-w-[700px] md:w-[650px] max-sm:w-[355px]">
             <div className="mt-[20px]">
-                <p className="lg:w-[700px] text-[#282B26] font-fira-sans lg:text-lg text-lg font-firaSansRegular leading-relaxed md:w-[650px]">
+                <p className="lg:w-[700px] text-[#282B26] lg:text-md text-md font-firaSansRegular leading-relaxed md:w-[650px]">
                     Product design should always deliver value. Here are some key outcomes I contributed towards on my product design journey so far.
                 </p>
             </div>
@@ -12,19 +12,19 @@ const Outcomes = () => {
                 <div className="grid grid-cols-3 max-sm:grid-cols-2 lg:gap-[90px] md:gap-[40px]">
                     <div className="flex flex-col items-center">
                         <h2 className="lg:text-5xl font-bold font-crimsonProSemi md:text-3xl max-sm:text-3xl">3M+</h2>
-                        <p className="mt-1 text-gray-600 md:text-sm max-sm:text-[10px]">Euros Raised</p>
+                        <p className="mt-1 text-gray-600 md:text-sm max-sm:text-[10px] font-firaSansRegular">Euros Raised</p>
                     </div>
                     <div className="flex flex-col items-center">
                         <h2 className="lg:text-5xl font-bold font-crimsonProSemi md:text-3xl max-sm:text-3xl">9M+</h2>
-                        <p className="mt-1 text-gray-600 md:text-sm max-sm:text-[10px]">Users Served</p>
+                        <p className="mt-1 text-gray-600 md:text-sm max-sm:text-[10px] font-firaSansRegular">Users Served</p>
                     </div>
                     <div className="flex flex-col items-center">
                         <h2 className="lg:text-5xl font-bold font-crimsonProSemi md:text-3xl max-sm:text-3xl">4.8</h2>
-                        <p className="mt-1 text-gray-600 md:text-sm max-sm:text-[10px]">Ø App Store Rating</p>
+                        <p className="mt-1 text-gray-600 md:text-sm max-sm:text-[10px] font-firaSansRegular">Ø App Store Rating</p>
                     </div>
                     <div className="lg:col-span-3 md:col-span-3 flex flex-col items-center">
                         <h2 className="lg:text-5xl font-bold font-crimsonProSemi md:text-3xl max-sm:text-3xl">-28%</h2>
-                        <p className="mt-1 text-gray-600 md:text-sm max-sm:text-[10px]">Household Energy Consumption</p>
+                        <p className="mt-1 text-gray-600 md:text-sm max-sm:text-[10px] font-firaSansRegular">Household Energy Consumption</p>
                     </div>
                 </div>
                 <div>

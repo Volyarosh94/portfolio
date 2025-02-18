@@ -58,28 +58,31 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="fixed top-0 left-0 p-1 z-20 lg:hidden flex items-center w-full">
-        {isVisible && <h3 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-black text-2xl font-crimsonProSemi">Charles</h3>}
-        <button
-          onClick={toggleMenu}
-          className={`text-black text-2xl ml-auto ${isOpen ? "invisible" : "visible"}`}
-        >
-          ☰
-        </button>
-      </div>
+      {isVisible && (
+        <div className={`fixed top-0 left-0 p-1 z-20 lg:hidden flex items-center w-full bg-gray-100 py-4 transition-opacity duration-600 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+          <h3 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-black text-2xl font-crimsonProSemi">Charles</h3>
+          <button
+            onClick={toggleMenu}
+            className={`text-black text-2xl ml-auto ${isOpen ? "invisible" : "visible"}`}
+          >
+            ☰
+          </button>
+        </div>
+      )}
       {isOpen && (
-        <div className="fixed inset-0 bg-[#F5F5F5] z-30 flex flex-col items-center justify-start lg:hidden w-full h-full overflow-hidden">
+        <div className="fixed inset-0 bg-[#F5F5F5] z-30 flex flex-col items-start justify-start lg:hidden w-full h-full overflow-hidden">
+          <h3 className="text-black text-2xl font-crimsonProSemi ml-4 mt-4">Charles</h3>
           <button
             onClick={toggleMenu}
             className="absolute top-4 right-4 text-black text-2xl"
           >
             ✖
           </button>
-          <ul className="mt-16 space-y-4 text-center">
+          <ul className="mt-16 space-y-4 text-center text-left ml-6">
             {["Intro", "Approach", "Experience", "Work", "Outcomes", "Contact"].map((section) => (
               <li
                 key={section}
-                className={`cursor-pointer hover:text-black ${activeSection.toLowerCase() === section.toLowerCase() ? "text-black font-bold" : ""}`}
+                className={`text-left font-firaSansRegular cursor-pointer hover:text-black ${activeSection.toLowerCase() === section.toLowerCase() ? "text-black font-bold" : ""}`}
                 onClick={() => scrollToSection(section.toLowerCase())}
               >
                 {section.charAt(0).toUpperCase() + section.slice(1)}
