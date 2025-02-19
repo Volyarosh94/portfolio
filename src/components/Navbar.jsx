@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import close from "../assets/svg/close.svg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -63,7 +64,7 @@ const Navbar = () => {
           <h3 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="font-crimsonProSemi text-black text-2xl ml-3">Charles</h3>
           <button
             onClick={toggleMenu}
-            className={`text-black text-2xl ml-auto ${isOpen ? "invisible" : "visible"}`}
+            className={`text-black text-2xl mr-2 ml-auto ${isOpen ? "invisible" : "visible"}`}
           >
             ☰
           </button>
@@ -75,9 +76,9 @@ const Navbar = () => {
             <h3 className="text-black text-2xl font-crimsonProSemi ml-4 mt-4">Charles</h3>
             <button
               onClick={toggleMenu}
-              className="absolute top-4 right-1 text-black text-2xl"
+              className="absolute top-4 right-2 text-black text-2xl"
             >
-              ✖
+              <img src={close} alt="close" className="w-8 h-8" />
             </button>
           </div>
           <ul className="mt-16 space-y-4 text-center text-left ml-6">
