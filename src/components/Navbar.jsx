@@ -60,7 +60,7 @@ const Navbar = () => {
   return (
     <div>
       {isVisible && (
-        <div className={`fixed top-0 left-0 bg-[#F5F5F5] p-1 z-20 lg:hidden flex items-center w-full bg-gray-100 py-4 transition-opacity duration-600 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+        <div className={`fixed top-0 left-0 p-1 z-20 bg-[#F0F0EF] lg:hidden flex items-center w-full py-4 transition-opacity duration-600`}>
           <h3 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="font-crimsonProSemi text-black text-2xl ml-3">Charles</h3>
           <button
             onClick={toggleMenu}
