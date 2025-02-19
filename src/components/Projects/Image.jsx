@@ -37,14 +37,14 @@ const Image = ({ image1, image2, layout }) => {
     if (layout === "columnTwo") {
         return (
             <div className="flex flex-col gap-4 max-md:flex-row max-md:gap-2 max-md:justify-center max-md:items-center">
-                <div className="w-[250px] h-[150px] mb-6 max-sm:w-[180px] max-sm:h-[100px] max-sm:px-4">
+                <div className="w-[250px] h-[150px] mb-6 max-sm:w-[180px] max-sm:h-[100px] max-sm:px-4 shadow-lg">
                     <img
                         className="w-full h-full object-cover"
                         src={image1}
                         alt="Two screenshots of the Javelin app. The left screen show a user landing page, from where they can select content based on their current motivation, rather than from an algorithm. The right screen shows a curated playlist screen with the first video (BLACK HOLES) ready to play. The page also shows the curator, with a descriptive text for the video, and a list of other video thumbnails for the rest of the curated playlist."
                     />
                 </div>
-                <div className="w-[250px] h-[150px] mb-6 lg:ml-[40px] max-sm:ml-0 max-sm:w-[150px] max-sm:h-[80px]">
+                <div className="w-[250px] h-[150px] mb-6 lg:ml-[40px] max-sm:ml-0 max-sm:w-[150px] max-sm:h-[80px] shadow-lg">
                     <img
                         className="w-full h-full object-cover"
                         src={image2}
@@ -71,7 +71,7 @@ const Image = ({ image1, image2, layout }) => {
 
 
     return (
-        <div className="flex gap-4 h-[320px] max-md:flex max-md:justify-center max-md:items-center max-md:gap-8">
+        <div className="flex gap-4 h-[320px] max-md:flex max-md:justify-center max-md:items-center max-md:gap-8 lg:mb-8 md:mb-4 max-sm:mb-6">
             <div className="lg:w-1/2">
                 <img
                     className=" h-[320px] rounded-xl"

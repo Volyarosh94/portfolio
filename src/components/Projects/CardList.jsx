@@ -1,8 +1,8 @@
 import Card from './Card';
 import tado2 from '../../assets/tado2.png';
 import keyward2 from '../../assets/KeyWord.png';
-import parry from '../../assets/Parry.png';
 import javelin2 from '../../assets/Javelin2.png';
+import parry from '../../assets/Parry.png';
 import n26 from '../../assets/N26(2).png';
 
 const CardInfo = [

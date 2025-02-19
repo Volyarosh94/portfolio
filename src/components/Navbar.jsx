@@ -56,38 +56,49 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  // className={`fixed top-0 left-0 bg-[#F0F0EF] py-1 z-20 lg:hidden flex items-center justify-between w-full py-4 transition-transform duration-200 transform ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}
+
 
   return (
     <div>
-      {isVisible && (
-        <div className={`fixed top-0 left-0 bg-[#F0F0EF]  p-1 z-20 lg:hidden flex items-center w-full py-4 transition-opacity duration-600 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-          <h3 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="font-crimsonProSemi text-black text-2xl ml-3">Charles</h3>
+      <div className={`fixed top-0 left-0 w-full bg-[#F0F0EF] py-1 z-20 lg:hidden py-4 transition-transform duration-200 transform ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
+        <div className="flex items-center justify-between mx-auto max-w-[700px] max-sm:max-w-[395px] sm:max-w-[650px] md:w-[650px] w-full px-4">
+          <h3
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="font-crimsonProSemi text-black text-2xl"
+          >
+            Charles
+          </h3>
           <button
             onClick={toggleMenu}
-            className={`text-black text-2xl mr-2 ml-auto ${isOpen ? "invisible" : "visible"}`}
+            className={`text-black text-2xl transition-transform duration-1000 transform 
+              ${isVisible ? "translate-x-0" : "translate-x-[150px]"}`}
           >
             ☰
           </button>
         </div>
-      )}
+      </div>
       {isOpen && (
-        <div className="fixed inset-0 bg-[#F5F5F5] z-30 flex flex-col items-start justify-start lg:hidden w-full h-full overflow-hidden">
+        <div className="fixed inset-0 bg-[#F5F5F5] z-30 flex flex-col items-start justify-start lg:hidden w-full h-full overflow-hidden transition-opacity duration-600">
           <div>
-            <h3 className="text-black text-2xl font-crimsonProSemi ml-4 mt-4">Charles</h3>
+            <h3 className="text-black text-2xl font-crimsonProSemi ml-8 mt-4">Charles</h3>
             <button
               onClick={toggleMenu}
-              className="absolute top-4 right-2 text-black text-2xl"
+              className="absolute top-4 right-4 text-black text-2xl"
             >
               <img src={close} alt="close" className="w-8 h-8" />
             </button>
           </div>
-          <ul className="mt-16 space-y-4 text-center text-left ml-6">
+          <ul className="mt-16 space-y-2 text-center text-left ml-6">
             {["Intro", "Approach", "Experience", "Work", "Outcomes", "Contact"].map((section) => (
               <li
                 key={section}
-                className={`text-left font-firaSansRegular cursor-pointer hover:text-black ${activeSection.toLowerCase() === section.toLowerCase() ? "text-black font-bold" : ""}`}
+                className={`text-left ml-6 font-firaSansRegular font-light cursor-pointer hover:text-black relative ${activeSection.toLowerCase() === section.toLowerCase() ? "text-black font-bold" : ""}`}
                 onClick={() => scrollToSection(section.toLowerCase())}
               >
+                {activeSection.toLowerCase() === section.toLowerCase() && (
+                  <span className="absolute left-[-15px] top-1/2 transform -translate-y-1/2 w-[6px] h-[6px] bg-black rounded-[32%]"></span>
+                )}
                 {section.charAt(0).toUpperCase() + section.slice(1)}
               </li>
             ))}
@@ -95,33 +106,33 @@ const Navbar = () => {
         </div>
       )}
       <nav className="lg:fixed lg:left-0 lg:top-0 lg:h-screen lg:w-64 navbar-text text-white lg:p-6 lg:text-left lg:ml-[20px] md:ml-[25px] md:mt-[10px] hidden lg:block">
-        <div className="group inline-flex items-center space-x-2 cursor-pointer"
+        <div className="group inline-flex items-center space-x-2 cursor-pointer relative"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
-          <span className="font-bold">Charles</span>
-          <span className="font-bold overflow-hidden transition-all duration-200 w-0 group-hover:w-auto">
+          <h3 className="font-crimsonProSemi text-black text-2xl ml-3">Charles</h3>
+          <h3 className="font-crimsonProSemi text-black text-2xl ml-3 absolute left-0 opacity-0 group-hover:opacity-100 group-hover:translate-x-full transition-all duration-1000">
             Thorburn
-          </span>
+          </h3>
         </div>
 
-
-        <ul className="mt-[100px] space-y-4">
+        <ul className="mt-[100px]">
           {
             ["Intro", "Approach", "Experience", "Work", "Outcomes", "Contact"].map((section) => (
-              <li
-                key={section}
-                className={`cursor-pointer hover:text-black ${activeSection.toLowerCase() === section.toLowerCase() ? "text-black font-bold" : ""}`}
-                onClick={() => scrollToSection(section.toLowerCase())}
-              >
-                {section.charAt(0).toUpperCase() + section.slice(1)}
+              <li key={section} className="font-firaSansRegular font-light w-fit p-2 relative cursor-pointer hover:border-2 hover:border-blue-500 hover:rounded-[7%]">
+                {activeSection.toLowerCase() === section.toLowerCase() && (
+                  <span className="absolute left-[-10px] top-1/2 transform -translate-y-1/2 w-[7px] h-[7px] bg-black rounded-[32%]"></span>
+                )}
+                <span className={`${activeSection.toLowerCase() === section.toLowerCase() ? "text-black font-bold" : ""}`} onClick={() => scrollToSection(section.toLowerCase())}>
+                  {section.charAt(0).toUpperCase() + section.slice(1)}
+                </span>
               </li>
             ))
           }
         </ul>
-        <div className="mt-8 hidden lg:flex justify-start">
+        <div className="mt-[500px] hidden lg:flex justify-start">
           <a
             href="https://www.linkedin.com/in/charles-thorburn-871b8a193/"
-            className="font-bold underline cursor-pointer z-10 text-xl lg:mt-[150px]"
+            className="font-medium font-firaSansRegular text-black underline cursor-pointer z-10 text-xl"
             target="_blank"
             alt="LinkedIn deep Link
                 to personal LI page.
