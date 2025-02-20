@@ -78,7 +78,7 @@ const Navbar = () => {
       </div>
       {isOpen && (
         <div className="fixed inset-0 bg-[#F5F5F5] z-30 flex flex-col items-start justify-start lg:hidden w-full h-full overflow-hidden transition-opacity duration-600">
-          <div className="flex items-center justify-between mx-auto max-w-[700px] max-sm:max-w-[395px] sm:max-w-[650px] md:w-[650px] w-full px-4">
+          <div className="flex items-center justify-between mx-auto max-w-[700px] max-sm:max-w-[395px] sm:max-w-[650px] md:w-[650px] w-full pl-4 pr-3">
             <h3 className="text-black text-2xl font-crimsonProSemi mt-4">Charles</h3>
             <button
               onClick={toggleMenu}
