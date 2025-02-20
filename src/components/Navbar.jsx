@@ -56,8 +56,6 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  // className={`fixed top-0 left-0 bg-[#F0F0EF] py-1 z-20 lg:hidden flex items-center justify-between w-full py-4 transition-transform duration-200 transform ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}
-
 
   return (
     <div>
@@ -80,20 +78,20 @@ const Navbar = () => {
       </div>
       {isOpen && (
         <div className="fixed inset-0 bg-[#F5F5F5] z-30 flex flex-col items-start justify-start lg:hidden w-full h-full overflow-hidden transition-opacity duration-600">
-          <div>
-            <h3 className="text-black text-2xl font-crimsonProSemi ml-8 mt-4">Charles</h3>
+          <div className="flex items-center justify-between mx-auto max-w-[700px] max-sm:max-w-[395px] sm:max-w-[650px] md:w-[650px] w-full px-4">
+            <h3 className="text-black text-2xl font-crimsonProSemi mt-4">Charles</h3>
             <button
               onClick={toggleMenu}
-              className="absolute top-4 right-4 text-black text-2xl"
+              className="text-black text-2xl mt-4"
             >
               <img src={close} alt="close" className="w-8 h-8" />
             </button>
           </div>
-          <ul className="mt-16 space-y-2 text-center text-left ml-6">
+          <ul className="mt-8 space-y-2 text-left mx-auto max-w-[700px] max-sm:max-w-[395px] sm:max-w-[650px] md:w-[650px] w-full px-4">
             {["Intro", "Approach", "Experience", "Work", "Outcomes", "Contact"].map((section) => (
               <li
                 key={section}
-                className={`text-left ml-6 font-firaSansRegular font-light cursor-pointer hover:text-black relative ${activeSection.toLowerCase() === section.toLowerCase() ? "text-black font-bold" : ""}`}
+                className={`font-firaSansRegular font-light cursor-pointer hover:text-black relative ${activeSection.toLowerCase() === section.toLowerCase() ? "text-black font-bold" : ""}`}
                 onClick={() => scrollToSection(section.toLowerCase())}
               >
                 {activeSection.toLowerCase() === section.toLowerCase() && (
@@ -129,7 +127,7 @@ const Navbar = () => {
             ))
           }
         </ul>
-        <div className="mt-[500px] hidden lg:flex justify-start">
+        <div className="mt-[200px] hidden lg:flex justify-start">
           <a
             href="https://www.linkedin.com/in/charles-thorburn-871b8a193/"
             className="font-medium font-firaSansRegular text-black underline cursor-pointer z-10 text-xl"
