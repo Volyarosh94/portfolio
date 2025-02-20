@@ -26,9 +26,9 @@ const Card = ({ title, text, technologies, logo }) => {
                     ) : logo === tado2 ? (
                         <img src={logo} className="lg:w-[60px] lg:h-[85px] md:w-[80px] md:h-[100px] max-sm:w-[60px] max-sm:h-[70px] lg:pb-6 md:pb-4" alt="Company logo" />
                     ) : logo === keyward2 ? (
-                        <img src={logo} className="w-[220px] h-[50px] lg:mb-8 md:mb-4" alt="Company logo" />
+                        <img src={logo} className="w-[180px] h-[40px] lg:mb-8 md:mb-4" alt="Company logo" />
                     ) : logo === javelin2 ? (
-                        <img src={logo} className="w-[220px] h-[50px] lg:mb-8 md:mb-4" alt="Company logo" />
+                        <img src={logo} className="w-[180px] h-[40px] lg:mb-8 md:mb-4" alt="Company logo" />
                     ) : (
                         <img src={logo} className="w-[160px] h-[50px] lg:mb-8 md:mb-4" alt="Company logo" />
                     )
