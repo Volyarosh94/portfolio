@@ -87,7 +87,7 @@ const Navbar = () => {
               <img src={close} alt="close" className="w-8 h-8" />
             </button>
           </div>
-          <ul className="mt-8 space-y-2 text-left mx-auto max-w-[700px] max-sm:max-w-[395px] sm:max-w-[650px] md:w-[650px] w-full px-4">
+          <ul className="mt-8 space-y-2 text-left mx-auto max-w-[700px] max-sm:max-w-[395px] sm:max-w-[650px] md:w-[650px] w-full px-[30px]">
             {["Intro", "Approach", "Experience", "Work", "Outcomes", "Contact"].map((section) => (
               <li
                 key={section}
@@ -127,7 +127,7 @@ const Navbar = () => {
             ))
           }
         </ul>
-        <div className="mt-[200px] hidden lg:flex justify-start">
+        <div className="mt-[200px] hidden lg:flex justify-start w-fit p-2 sticky hover:border-2 hover:border-blue-500 hover:rounded-[7%]">
           <a
             href="https://www.linkedin.com/in/charles-thorburn-871b8a193/"
             className="font-medium font-firaSansRegular text-black underline cursor-pointer z-10 text-xl"
