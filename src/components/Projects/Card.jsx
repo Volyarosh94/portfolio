@@ -10,7 +10,7 @@ const Card = ({ title, text, technologies, logo }) => {
         <div className="flex flex-col gap-6">
             <div className="space-y-4">
                 <h2 className="text-[34px] font-bold text-black text-left lg:mb-5 mb-2 font-crimsonProSemi leading-none">{title}</h2>
-                <p className="text-[12px] text-gray-700 text-left pb-2 lg:mb-5 font-normal leading-relaxed font-firaSansRegular">{text}</p>
+                <p className="text-[16px] text-gray-700 text-left pb-2 lg:mb-5 font-normal leading-relaxed font-firaSansRegular">{text}</p>
                 <div className="flex flex-wrap gap-2">
                     {technologies.map((tech, index) => (
                         <span key={index} className="px-4 py-1 text-sm bg-customGray text-white rounded-[5px]">
@@ -22,9 +22,9 @@ const Card = ({ title, text, technologies, logo }) => {
             <div className="mt-auto lg:mt-5">
                 {
                     logo === n26 ? (
-                        <img src={logo} className="lg:w-[60px] lg:h-[85px] md:w-[80px] md:h-[100px] max-sm:w-[60px] max-sm:h-[70px] lg:pb-6 md:pb-4" alt="Company logo" />
+                        <img src={logo} className="lg:w-[60px] lg:h-[85px] md:w-[80px] md:h-[100px] max-sm:w-[70px] max-sm:h-[70px] lg:pb-6 md:pb-4" alt="Company logo" />
                     ) : logo === tado2 ? (
-                        <img src={logo} className="lg:w-[60px] lg:h-[85px] md:w-[80px] md:h-[100px] max-sm:w-[60px] max-sm:h-[70px] lg:pb-6 md:pb-4" alt="Company logo" />
+                        <img src={logo} className="lg:w-[60px] lg:h-[85px] md:w-[80px] md:h-[100px] max-sm:w-[70px] max-sm:h-[70px] lg:pb-6 md:pb-4" alt="Company logo" />
                     ) : logo === keyward2 ? (
                         <img src={logo} className="w-[180px] h-[40px] lg:mb-8 md:mb-4" alt="Company logo" />
                     ) : logo === javelin2 ? (

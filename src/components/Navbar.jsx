@@ -69,14 +69,13 @@ const Navbar = () => {
           </h3>
           <button
             onClick={toggleMenu}
-            className={`text-black text-2xl transition-transform duration-1000 transform 
-              ${isVisible ? "translate-x-0" : "translate-x-[150px]"}`}
+            className={`text-black text-2xl`}
           >
             ☰
           </button>
         </div>
       </div>
-      <div className={`fixed inset-0 bg-[#F5F5F5] z-30 flex flex-col items-start justify-start lg:hidden w-full h-full overflow-hidden transition-transform duration-1000 transform ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+      <div className={`fixed inset-0 bg-[#F5F5F5] z-30 flex flex-col items-start justify-start lg:hidden w-full h-full overflow-hidden transition-transform duration-300 transform ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         <div className="flex items-center justify-between mx-auto max-w-[700px] max-sm:max-w-[395px] sm:max-w-[650px] md:w-[650px] w-full pl-4 pr-3">
           <h3 className="text-black text-2xl font-crimsonProSemi mt-4">Charles</h3>
           <button
@@ -90,7 +89,7 @@ const Navbar = () => {
           {["Intro", "Approach", "Experience", "Work", "Outcomes", "Contact"].map((section) => (
             <li
               key={section}
-              className={`font-firaSansRegular font-light cursor-pointer hover:text-black relative ${activeSection.toLowerCase() === section.toLowerCase() ? "text-black font-bold" : ""}`}
+              className={`font-firaSansRegular font-light cursor-pointer hover:text-black relative ${activeSection.toLowerCase() === section.toLowerCase() ? "text-black font-medium" : ""}`}
               onClick={() => scrollToSection(section.toLowerCase())}
             >
               {activeSection.toLowerCase() === section.toLowerCase() && (
@@ -118,7 +117,7 @@ const Navbar = () => {
                 {activeSection.toLowerCase() === section.toLowerCase() && (
                   <span className="absolute left-[-10px] top-1/2 transform -translate-y-1/2 w-[7px] h-[7px] bg-black rounded-[32%]"></span>
                 )}
-                <span className={`${activeSection.toLowerCase() === section.toLowerCase() ? "text-black font-bold" : ""}`} onClick={() => scrollToSection(section.toLowerCase())}>
+                <span className={`${activeSection.toLowerCase() === section.toLowerCase() ? "text-black font-medium" : ""}`} onClick={() => scrollToSection(section.toLowerCase())}>
                   {section.charAt(0).toUpperCase() + section.slice(1)}
                 </span>
               </li>
