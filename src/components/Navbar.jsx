@@ -119,7 +119,7 @@ const Navbar = () => {
                 )}
                 <span
                   tabIndex="0"
-                  className={`focus:outline-none focus:ring-2 focus:ring-blue-500 p-1 rounded-sm ${activeSection.toLowerCase() === section.toLowerCase() ? "text-black font-medium" : ""}`}
+                  className={`focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 p-1 rounded-sm ${activeSection.toLowerCase() === section.toLowerCase() ? "text-black font-medium" : ""}`}
                   onClick={() => scrollToSection(section.toLowerCase())}
                   onKeyDown={(e) => {
                     if (e.key === "Enter") {
