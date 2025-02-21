@@ -76,33 +76,31 @@ const Navbar = () => {
           </button>
         </div>
       </div>
-      {isOpen && (
-        <div className="fixed inset-0 bg-[#F5F5F5] z-30 flex flex-col items-start justify-start lg:hidden w-full h-full overflow-hidden transition-opacity duration-600">
-          <div className="flex items-center justify-between mx-auto max-w-[700px] max-sm:max-w-[395px] sm:max-w-[650px] md:w-[650px] w-full pl-4 pr-3">
-            <h3 className="text-black text-2xl font-crimsonProSemi mt-4">Charles</h3>
-            <button
-              onClick={toggleMenu}
-              className="text-black text-2xl mt-4"
-            >
-              <img src={close} alt="close" className="w-8 h-8" />
-            </button>
-          </div>
-          <ul className="mt-8 space-y-2 text-left mx-auto max-w-[700px] max-sm:max-w-[395px] sm:max-w-[650px] md:w-[650px] w-full px-[30px]">
-            {["Intro", "Approach", "Experience", "Work", "Outcomes", "Contact"].map((section) => (
-              <li
-                key={section}
-                className={`font-firaSansRegular font-light cursor-pointer hover:text-black relative ${activeSection.toLowerCase() === section.toLowerCase() ? "text-black font-bold" : ""}`}
-                onClick={() => scrollToSection(section.toLowerCase())}
-              >
-                {activeSection.toLowerCase() === section.toLowerCase() && (
-                  <span className="absolute left-[-15px] top-1/2 transform -translate-y-1/2 w-[6px] h-[6px] bg-black rounded-[32%]"></span>
-                )}
-                {section.charAt(0).toUpperCase() + section.slice(1)}
-              </li>
-            ))}
-          </ul>
+      <div className={`fixed inset-0 bg-[#F5F5F5] z-30 flex flex-col items-start justify-start lg:hidden w-full h-full overflow-hidden transition-transform duration-1000 transform ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+        <div className="flex items-center justify-between mx-auto max-w-[700px] max-sm:max-w-[395px] sm:max-w-[650px] md:w-[650px] w-full pl-4 pr-3">
+          <h3 className="text-black text-2xl font-crimsonProSemi mt-4">Charles</h3>
+          <button
+            onClick={toggleMenu}
+            className="text-black text-2xl mt-4"
+          >
+            <img src={close} alt="close" className="w-8 h-8" />
+          </button>
         </div>
-      )}
+        <ul className="mt-8 space-y-2 text-left mx-auto max-w-[700px] max-sm:max-w-[395px] sm:max-w-[650px] md:w-[650px] w-full px-[30px]">
+          {["Intro", "Approach", "Experience", "Work", "Outcomes", "Contact"].map((section) => (
+            <li
+              key={section}
+              className={`font-firaSansRegular font-light cursor-pointer hover:text-black relative ${activeSection.toLowerCase() === section.toLowerCase() ? "text-black font-bold" : ""}`}
+              onClick={() => scrollToSection(section.toLowerCase())}
+            >
+              {activeSection.toLowerCase() === section.toLowerCase() && (
+                <span className="absolute left-[-15px] top-1/2 transform -translate-y-1/2 w-[6px] h-[6px] bg-black rounded-[32%]"></span>
+              )}
+              {section.charAt(0).toUpperCase() + section.slice(1)}
+            </li>
+          ))}
+        </ul>
+      </div>
       <nav className="lg:fixed lg:left-0 lg:top-0 lg:h-screen lg:w-64 navbar-text text-white lg:p-6 lg:text-left lg:ml-[20px] md:ml-[25px] md:mt-[10px] hidden lg:block">
         <div className="group inline-flex items-center space-x-2 cursor-pointer relative"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
