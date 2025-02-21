@@ -113,21 +113,30 @@ const Navbar = () => {
         <ul className="mt-[100px]">
           {
             ["Intro", "Approach", "Experience", "Work", "Outcomes", "Contact"].map((section) => (
-              <li key={section} className="font-firaSansRegular font-light w-fit p-2 relative cursor-pointer hover:border-2 hover:border-blue-500 hover:rounded-[7%]">
+              <li key={section} className="font-firaSansRegular font-light w-fit p-2 relative cursor-pointer focus:border-blue-500">
                 {activeSection.toLowerCase() === section.toLowerCase() && (
                   <span className="absolute left-[-10px] top-1/2 transform -translate-y-1/2 w-[7px] h-[7px] bg-black rounded-[32%]"></span>
                 )}
-                <span className={`${activeSection.toLowerCase() === section.toLowerCase() ? "text-black font-medium" : ""}`} onClick={() => scrollToSection(section.toLowerCase())}>
+                <span
+                  tabIndex="0"
+                  className={`focus:outline-none focus:ring-2 focus:ring-blue-500 p-1 rounded-sm ${activeSection.toLowerCase() === section.toLowerCase() ? "text-black font-medium" : ""}`}
+                  onClick={() => scrollToSection(section.toLowerCase())}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      scrollToSection(section.toLowerCase());
+                    }
+                  }}
+                >
                   {section.charAt(0).toUpperCase() + section.slice(1)}
                 </span>
               </li>
             ))
           }
         </ul>
-        <div className="mt-[200px] hidden lg:flex justify-start w-fit p-2 sticky hover:border-2 hover:border-blue-500 hover:rounded-[7%]">
+        <div className="mt-[250px] hidden lg:flex justify-start w-fit p-2 sticky">
           <a
             href="https://www.linkedin.com/in/charles-thorburn-871b8a193/"
-            className="font-medium font-firaSansRegular text-black underline cursor-pointer z-10 text-xl"
+            className="font-medium font-firaSansRegular text-black underline cursor-pointer z-10 text-xl focus:outline-none focus:ring-2 focus:ring-blue-500 p-1 rounded-sm"
             target="_blank"
             alt="LinkedIn deep Link
                 to personal LI page.
