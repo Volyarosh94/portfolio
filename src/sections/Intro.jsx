@@ -7,7 +7,7 @@ const Intro = () => {
             <div id="intro" className='flex-1 mx-auto max-w-[700px] max-sm:w-[380px] mt-[50px]'>
                 <div className='max-md:text-[80px] font-crimsonProSemi lg:text-[95px] text-[#282B26] md:text-[85px] max-sm:text-[40px] max-sm:mb-8 mt-[55px] text-left md:text-[70px] max-sm:text-[50px] leading-none'>
                     <span className='relative inline-block'>
-                        <span className='absolute inset-0 bg-yellow-200 lg:h-[10px] lg:top-[80px] md:h-[10px] md:top-[75px] sm:h-[10px] sm:top-[70px] max-sm:h-[5px] max-sm:top-[45px] left-0'></span>
+                        <span className='absolute inset-0 bg-yellow-200 lg:h-[10px] lg:top-[80px] md:h-[10px] md:top-[75px] sm:h-[10px] sm:top-[70px] max-sm:h-[5px] max-sm:top-[42px] left-0'></span>
                         <span className='relative z-10'>Regenerative</span>
                     </span>
                     <br />
