@@ -11,19 +11,19 @@ const Outcomes = () => {
             <div className="mt-[20px] lg:py-8 lg:w-[600px] md:w-[550px] md:py-2 max-sm:relative lg:relative">
                 <div className="grid grid-cols-3 max-sm:grid-cols-2 lg:gap-[90px] md:gap-[40px] justify-items-center">
                     <div className="flex flex-col items-center">
-                        <h2 className="lg:text-5xl font-bold font-crimsonProSemi max-md:text-4xl md:text-3xl max-sm:text-3xl">3M+</h2>
+                        <h2 className="lg:text-5xl font-bold font-crimsonProSemi max-md:text-4xl md:text-3xl max-sm:text-4xl">3M+</h2>
                         <p className="mt-1 text-gray-600 md:text-sm max-sm:text-[10px] font-firaSansRegular">Euros Raised</p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <h2 className="lg:text-5xl font-bold font-crimsonProSemi max-md:text-4xl md:text-3xl max-sm:text-3xl">9M+</h2>
+                        <h2 className="lg:text-5xl font-bold font-crimsonProSemi max-md:text-4xl md:text-3xl max-sm:text-4xl">9M+</h2>
                         <p className="mt-1 text-gray-600 md:text-sm max-sm:text-[10px] font-firaSansRegular">Users Served</p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <h2 className="lg:text-5xl font-bold font-crimsonProSemi max-md:text-4xl md:text-3xl max-sm:text-3xl">4.8</h2>
+                        <h2 className="lg:text-5xl font-bold font-crimsonProSemi max-md:text-4xl md:text-3xl max-sm:text-4xl">4.8</h2>
                         <p className="mt-1 text-gray-600 md:text-sm max-sm:text-[10px] font-firaSansRegular">Ø App Store Rating</p>
                     </div>
                     <div className="lg:col-span-3 md:col-span-3 max-sm:col-span-1 max-md:col-span-3 max-md:mt-[20px] max-sm:mt-[0px] flex flex-col items-center">
-                        <h2 className="lg:text-5xl font-bold font-crimsonProSemi max-md:text-4xl md:text-3xl max-sm:text-3xl">-28%</h2>
+                        <h2 className="lg:text-5xl font-bold font-crimsonProSemi max-md:text-4xl md:text-3xl max-sm:text-4xl">-28%</h2>
                         <p className="mt-1 text-gray-600 md:text-sm max-sm:text-[10px] font-firaSansRegular">Household Energy Consumption</p>
                     </div>
                 </div>

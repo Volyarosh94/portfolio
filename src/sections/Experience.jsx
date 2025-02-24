@@ -12,15 +12,15 @@ const Experience = () => {
                     I work across finance, social media, AI, governance, and IoT sectors at fledgling startups, rapidly growing scale ups, and established corporate organisations.
                 </p>
             </div>
-            <div className="flex flex-col items-center mt-[40px] justify-center">
+            <div className="flex flex-col items-center mt-[40px] justify-center lg:w-[700px]">
                 <div className="flex w-full justify-center lg:gap-[80px] md:gap-[60px] max-md:gap-[40px]">
-                    <img src={n26} alt="five company logos arranged in two rows: Top row shows N26 (stylized with a line above), Javelin, and Key Ward. Bottom row displays CitizenTech (with a globe icon) and tado° (styled with a degree symbol). All logos are presented in black against a light background." className="lg:h-10 md:h-[40px] max-md:h-[20px] sm:h-[40px] mx-2" />
+                    <img src={n26} alt="five company logos arranged in two rows: Top row shows N26 (stylized with a line above), Javelin, and Key Ward. Bottom row displays CitizenTech (with a globe icon) and tado° (styled with a degree symbol). All logos are presented in black against a light background." className="lg:h-14 md:h-[40px] max-md:h-[20px] sm:h-[40px] max-sm:h-[28px] mx-2" />
                     <img src={javelin} alt="five company logos arranged in two rows: Top row shows N26 (stylized with a line above), Javelin, and Key Ward. Bottom row displays CitizenTech (with a globe icon) and tado° (styled with a degree symbol). All logos are presented in black against a light background." className="lg:h-10 md:h-[40px] max-md:h-[20px] sm:h-[40px] mx-2" />
                     <img src={keyWord} alt="five company logos arranged in two rows: Top row shows N26 (stylized with a line above), Javelin, and Key Ward. Bottom row displays CitizenTech (with a globe icon) and tado° (styled with a degree symbol). All logos are presented in black against a light background." className="lg:h-10 md:h-[40px] max-md:h-[20px] sm:h-[40px] mx-2" />
                 </div>
                 <div className="flex justify-center mt-10 lg:gap-[80px] md:gap-[20px] max-md:gap-[40px]">
-                    <img src={citizenTech} alt="five company logos arranged in two rows: Top row shows N26 (stylized with a line above), Javelin, and Key Ward. Bottom row displays CitizenTech (with a globe icon) and tado° (styled with a degree symbol). All logos are presented in black against a light background." className="lg:h-10 md:h-[40px] max-md:h-[20px] sm:h-[40px] mx-2" />
-                    <img src={tado} alt="five company logos arranged in two rows: Top row shows N26 (stylized with a line above), Javelin, and Key Ward. Bottom row displays CitizenTech (with a globe icon) and tado° (styled with a degree symbol). All logos are presented in black against a light background." className="lg:h-10 md:h-[40px] max-md:h-[20px] sm:h-[40px] mx-2" />
+                    <img src={citizenTech} alt="five company logos arranged in two rows: Top row shows N26 (stylized with a line above), Javelin, and Key Ward. Bottom row displays CitizenTech (with a globe icon) and tado° (styled with a degree symbol). All logos are presented in black against a light background." className="lg:h-10 md:h-[40px] max-md:h-[20px] max-sm:h-[28px] sm:h-[40px] mx-2" />
+                    <img src={tado} alt="five company logos arranged in two rows: Top row shows N26 (stylized with a line above), Javelin, and Key Ward. Bottom row displays CitizenTech (with a globe icon) and tado° (styled with a degree symbol). All logos are presented in black against a light background." className="lg:h-10 md:h-[40px] max-md:h-[20px] max-sm:h-[24px] sm:h-[40px] mx-2" />
                 </div>
             </div>
         </div>

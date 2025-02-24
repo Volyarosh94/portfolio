@@ -60,7 +60,7 @@ const Navbar = () => {
   return (
     <div>
       <div className={`fixed top-0 left-0 w-full bg-[#F0F0EF] py-1 z-20 lg:hidden py-4 transition-transform duration-200 transform ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
-        <div className="flex items-center justify-between mx-auto max-w-[700px] max-sm:max-w-[395px] sm:max-w-[650px] md:w-[650px] w-full px-4">
+        <div className="flex items-center justify-between mx-auto max-w-[700px] max-sm:max-w-[395px] sm:max-w-[650px] md:w-[650px] w-full pr-3 max-sm:pl-4">
           <h3
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="font-crimsonProSemi text-black text-2xl"
@@ -89,7 +89,7 @@ const Navbar = () => {
           {["Intro", "Approach", "Experience", "Work", "Outcomes", "Contact"].map((section) => (
             <li
               key={section}
-              className={`font-firaSansRegular font-light cursor-pointer hover:text-black relative ${activeSection.toLowerCase() === section.toLowerCase() ? "text-black font-medium" : ""}`}
+              className={`font-firaSansRegular font-light cursor-pointer hover:text-black relative ${activeSection.toLowerCase() === section.toLowerCase() ? "text-black font-medium" : "text-[#6D6D69]"}`}
               onClick={() => scrollToSection(section.toLowerCase())}
             >
               {activeSection.toLowerCase() === section.toLowerCase() && (
@@ -110,7 +110,7 @@ const Navbar = () => {
           </h3>
         </div>
 
-        <ul className="mt-[100px]">
+        <ul className="mt-[60px]">
           {
             ["Intro", "Approach", "Experience", "Work", "Outcomes", "Contact"].map((section) => (
               <li key={section} className="font-firaSansRegular font-light w-fit p-2 relative cursor-pointer focus:border-blue-500">
