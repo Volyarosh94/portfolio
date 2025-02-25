@@ -133,7 +133,7 @@ const Navbar = () => {
             ))
           }
         </ul>
-        <div className="mt-[250px] hidden lg:flex justify-start w-fit p-2 sticky">
+        <div className="absolute bottom-8 w-full p-2">
           <a
             href="https://www.linkedin.com/in/charles-thorburn-871b8a193/"
             className="font-medium font-firaSansRegular text-black underline cursor-pointer z-10 text-xl focus:outline-none focus:ring-2 focus:ring-blue-500 p-1 rounded-sm"
