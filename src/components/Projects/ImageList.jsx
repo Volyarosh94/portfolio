@@ -5,7 +5,7 @@ import samsung from '../../assets/samsung.png';
 import mySpots from '../../assets/mySpots.png';
 import videoPlayer from '../../assets/videoPlayer.png';
 import desktop from '../../assets/Desktop.png';
-import woman from '../../assets/woman!.png';
+import woman from '../../assets/HandPng.png';
 import manual from '../../assets/Manual.png';
 
 const ImageInfo = [

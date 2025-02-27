@@ -11,7 +11,10 @@ const Navbar = () => {
   };
 
   const scrollToSection = (id) => {
-    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    const section = document.getElementById(id);
+    const offset = 129;
+    const sectionTop = section.offsetTop - offset;
+    window.scrollTo({ top: sectionTop, behavior: "smooth" });
     setActiveSection(id);
     setIsOpen(false);
   };
@@ -25,7 +28,7 @@ const Navbar = () => {
       lastScrollY = currentScrollY;
 
       const sections = ["intro", "approach", "experience", "work", "outcomes", "contact"];
-      const scrollPosition = window.scrollY;
+      const scrollPosition = window.scrollY + 131;
 
       sections.forEach((section) => {
         const sectionElement = document.getElementById(section);
@@ -60,7 +63,7 @@ const Navbar = () => {
   return (
     <div>
       <div className={`fixed top-0 left-0 w-full bg-[#F0F0EF] py-1 z-20 lg:hidden py-4 transition-transform duration-200 transform ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
-        <div className="flex items-center justify-between mx-auto max-w-[700px] max-sm:max-w-[395px] sm:max-w-[650px] md:w-[650px] w-full pr-3 max-sm:pl-4">
+        <div className="flex items-center justify-between mx-auto max-w-[700px] max-sm:max-w-[395px] sm:max-w-[650px] md:w-[650px] w-full pr-3 pl-4">
           <h3
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="font-crimsonProSemi text-black text-2xl"
@@ -105,7 +108,7 @@ const Navbar = () => {
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
           <h3 className="font-crimsonProSemi text-black text-2xl ml-3">Charles</h3>
-          <h3 className="font-crimsonProSemi text-black text-2xl ml-3 absolute left-0 opacity-0 group-hover:opacity-100 group-hover:translate-x-full transition-all duration-1000">
+          <h3 className="font-crimsonProSemi text-black text-2xl ml-3 opacity-0 group-hover:opacity-100 duration-300">
             Thorburn
           </h3>
         </div>
