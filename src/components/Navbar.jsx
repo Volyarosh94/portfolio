@@ -63,7 +63,7 @@ const Navbar = () => {
   return (
     <div>
       <div className={`fixed top-0 left-0 w-full bg-[#F0F0EF] py-1 z-20 lg:hidden py-4 transition-transform duration-200 transform ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
-        <div className="flex items-center justify-between mx-auto max-w-[700px] max-sm:max-w-[395px] sm:max-w-[650px] md:w-[650px] w-full pr-3 pl-4">
+        <div className="flex items-center justify-between mx-auto max-w-[700px] max-sm:max-w-[395px] sm:max-w-[650px] md:w-[650px] w-full max-sm:pl-[16px] pr-3 ">
           <h3
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="font-crimsonProSemi text-black text-2xl"
@@ -79,7 +79,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className={`fixed inset-0 bg-[#F5F5F5] z-30 flex flex-col items-start justify-start lg:hidden w-full h-full overflow-hidden transition-transform duration-300 transform ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-        <div className="flex items-center justify-between mx-auto max-w-[700px] max-sm:max-w-[395px] sm:max-w-[650px] md:w-[650px] w-full pl-4 pr-3">
+        <div className="flex items-center justify-between mx-auto max-w-[700px] max-sm:max-w-[395px] sm:max-w-[650px] md:w-[650px] w-full max-sm:pl-[16px] pr-3">
           <h3 className="text-black text-2xl font-crimsonProSemi mt-4">Charles</h3>
           <button
             onClick={toggleMenu}
