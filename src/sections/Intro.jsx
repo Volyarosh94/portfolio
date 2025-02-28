@@ -4,7 +4,7 @@ import pen from '../assets/pencil (2).png'
 const Intro = () => {
     return (
         <div>
-            <div id="intro" className='flex-1 mx-auto max-w-[685px] max-sm:w-[360px] mt-[50px]'>
+            <div id="intro" className='flex-1 mx-auto max-w-[685px] max-sm:w-[360px]'>
                 <div className='max-md:text-[80px] font-crimsonProSemi lg:text-[95px] text-[#282B26] md:text-[85px] max-sm:text-[40px] max-sm:mb-8 mt-[55px] text-left md:text-[70px] max-sm:text-[50px] leading-none'>
                     <span className='relative inline-block'>
                         <span className='absolute inset-0 bg-[#F2E74E] lg:h-[10px] lg:top-[80px] md:h-[10px] md:top-[75px] sm:h-[10px] sm:top-[70px] max-sm:h-[5px] max-sm:top-[42px] left-0'></span>
