@@ -92,7 +92,7 @@ const Navbar = () => {
           {["Intro", "Approach", "Experience", "Work", "Outcomes", "Contact"].map((section) => (
             <li
               key={section}
-              className={`font-firaSansRegular font-light cursor-pointer hover:text-black relative ${activeSection.toLowerCase() === section.toLowerCase() ? "text-black font-medium" : "text-[#6D6D69]"}`}
+              className={`font-firaSansRegular font-light cursor-pointer hover:text-black relative ${activeSection.toLowerCase() === section.toLowerCase() ? "text-black firaSansRegular font-medium" : "text-[#6D6D69]"}`}
               onClick={() => scrollToSection(section.toLowerCase())}
             >
               {activeSection.toLowerCase() === section.toLowerCase() && (
@@ -116,13 +116,13 @@ const Navbar = () => {
         <ul className="mt-[60px]">
           {
             ["Intro", "Approach", "Experience", "Work", "Outcomes", "Contact"].map((section) => (
-              <li key={section} className="font-firaSansRegular font-light w-fit p-2 relative cursor-pointer focus:border-blue-500">
+              <li key={section} className="font-firaSansRegular font-light w-fit p-2 relative cursor-pointer hover:text-black focus:border-blue-500">
                 {activeSection.toLowerCase() === section.toLowerCase() && (
                   <span className="absolute left-[-10px] top-1/2 transform -translate-y-1/2 w-[7px] h-[7px] bg-black rounded-[32%]"></span>
                 )}
                 <span
                   tabIndex="0"
-                  className={`focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 p-1 rounded-sm ${activeSection.toLowerCase() === section.toLowerCase() ? "text-black font-medium" : ""}`}
+                  className={`focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 p-1 rounded-sm ${activeSection.toLowerCase() === section.toLowerCase() ? "text-black font-firaSansRegular font-medium" : ""}`}
                   onClick={() => scrollToSection(section.toLowerCase())}
                   onKeyDown={(e) => {
                     if (e.key === "Enter") {

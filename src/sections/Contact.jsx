@@ -6,7 +6,7 @@ import Smile from '../assets/Smiles.png'
 const Contact = () => {
     return (
         <div id="contact" className="text-left mx-auto mt-[150px] max-sm:mt-[200px] max-w-[700px] md:w-[650px] max-sm:w-[355px]">
-            <p className='lg:text-md text-md font-firaSansRegular leading-relaxed text-[282B26]'>I would love to hear from you, especially if you are interested in working
+            <p className='lg:text-[20px] md:text-[18px] font-firaSansRegular leading-relaxed text-[282B26]'>I would love to hear from you, especially if you are interested in working
                 together to make beautiful, valuable, and impactful products. </p>
             <div className="flex flex-col lg:gap-4 mt-[50px] text-lg">
                 <div className="flex items-center">

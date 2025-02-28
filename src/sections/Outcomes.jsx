@@ -4,7 +4,7 @@ const Outcomes = () => {
     return (
         <div id="outcomes" className="text-left mx-auto mt-[150px] max-w-[700px] md:w-[650px] max-sm:w-[355px]">
             <div className="mt-[20px]">
-                <p className="lg:w-[700px] text-[#282B26] lg:text-md text-md font-firaSansRegular leading-relaxed md:w-[650px]">
+                <p className="lg:w-[700px] text-[#282B26] lg:text-[20px] md:text-[18px] font-firaSansRegular leading-relaxed md:w-[650px]">
                     Product design should always deliver value. Here are some key outcomes I contributed towards on my product design journey so far.
                 </p>
             </div>

@@ -8,7 +8,7 @@ const Experience = () => {
     return (
         <div id="experience" className="text-left mx-auto mt-[150px] max-w-[700px] w-full md:w-[650px] max-sm:w-[355px]">
             <div className="mt-[20px]">
-                <p className="text-[#282B26] lg:w-[700px] font-fira-sans lg:text-md text-md font-firaSansRegular leading-relaxed md:w-[650px] max-sm:w-[360px]">
+                <p className="text-[#282B26] lg:w-[700px] font-fira-sans lg:text-[20px] md:text-[18px] text-md font-firaSansRegular leading-relaxed md:w-[650px] max-sm:w-[360px]">
                     I work across finance, social media, AI, governance, and IoT sectors at fledgling startups, rapidly growing scale ups, and established corporate organisations.
                 </p>
             </div>
