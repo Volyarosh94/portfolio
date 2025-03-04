@@ -58,7 +58,7 @@ const Image = ({ image1, image2, layout }) => {
     if (layout === "One") {
         return (
             <div className="flex flex-col gap-4 lg:pl-[20px] max-md:flex max-md:justify-center max-md:items-center">
-                <div className="lg:w-[300px] lg:h-[350px] md:w-[320px] md:h-[370px] max-md:w-[280px] max-md:h-[330px] max-sm:w-[195px] max-sm:h-[230px] md:w-[360px] md:h-[350px]">
+                <div className="lg:w-[300px] lg:h-[350px] md:w-[315px] md:h-[380px] max-md:w-[280px] max-md:h-[330px] max-sm:w-[195px] max-sm:h-[230px] md:w-[360px] md:h-[350px]">
                     <img
                         className="w-full h-full object-cover rounded-xl"
                         src={image1}

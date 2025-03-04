@@ -15,8 +15,10 @@ const Navbar = () => {
     const offset = 129;
     const sectionTop = section.offsetTop - offset;
     window.scrollTo({ top: sectionTop, behavior: "smooth" });
-    setActiveSection(id);
-    setIsOpen(false);
+    setTimeout(() => {
+      setActiveSection(id);
+      setIsOpen(false);
+    }, 600);
   };
 
   useEffect(() => {
@@ -92,7 +94,7 @@ const Navbar = () => {
           {["Intro", "Approach", "Experience", "Work", "Outcomes", "Contact"].map((section) => (
             <li
               key={section}
-              className={`font-firaSansRegular font-light cursor-pointer hover:text-black relative ${activeSection.toLowerCase() === section.toLowerCase() ? "text-black firaSansRegular font-medium" : "text-[#6D6D69]"}`}
+              className={`font-firaSansRegular font-light cursor-pointer hover:text-black relative ${activeSection.toLowerCase() === section.toLowerCase() ? "text-black font-firaSansRegular font-medium" : "text-[#6D6D69]"}`}
               onClick={() => scrollToSection(section.toLowerCase())}
             >
               {activeSection.toLowerCase() === section.toLowerCase() && (

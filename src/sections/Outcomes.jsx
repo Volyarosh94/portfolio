@@ -2,9 +2,9 @@ import square from '../assets/Square.png'
 
 const Outcomes = () => {
     return (
-        <div id="outcomes" className="text-left mx-auto mt-[150px] max-w-[700px] md:w-[650px] max-sm:w-[355px]">
+        <div id="outcomes" className="text-left mx-auto lg:mt-[300px] md:mt-[250px] sm:mt-[200px] max-sm:mt-[150px] max-w-[800px]] md:w-[650px] max-sm:w-[355px]">
             <div className="mt-[20px]">
-                <p className="lg:w-[700px] text-[#282B26] lg:text-[20px] md:text-[18px] font-firaSansRegular leading-relaxed md:w-[650px]">
+                <p className="lg:w-[730px] text-[#282B26] lg:text-[20px] md:text-[20px] sm:text-[18px] font-firaSansRegular font-normal leading-relaxed md:w-[650px]">
                     Product design should always deliver value. Here are some key outcomes I contributed towards on my product design journey so far.
                 </p>
             </div>
@@ -29,7 +29,7 @@ const Outcomes = () => {
                 </div>
                 <div>
                     <img
-                        className='max-sm:w-[150px] max-sm:h-[100px] max-md:w-[220px] max-sm:absolute max-md:h-[140px] max-sm:left-[40%] max-sm:top-[110%] lg:w-[200px] lg:h-[130px] md:w-[200px] md:h-[130px] lg:absolute lg:left-[90%] lg:top-[75%]'
+                        className='max-sm:w-[150px] max-sm:h-[100px] max-md:w-[220px] max-sm:absolute max-md:h-[140px] max-sm:left-[40%] max-sm:top-[110%] lg:w-[200px] lg:h-[130px] md:w-[200px] md:h-[130px] lg:absolute lg:left-[78%] lg:top-[75%]'
                         src={square} alt="An interactive whiteboard style yellow sticky note over-which three cursors pointing to the outcome values: an orange cursor labeled 'Business' at the top, a purple cursor labeled 'People' on the left, and a blue cursor labeled 'Planet' on the right." />
                 </div>
             </div >

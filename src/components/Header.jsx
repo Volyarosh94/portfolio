@@ -4,7 +4,7 @@ import Intro from '../sections/Intro'
 
 const Header = () => {
   return (
-    <div className='flex flex-col w-full lg:p-8 lg:pt-14 md:pt-14'>
+    <div className='lg:pt-14 md:pt-14'>
       <Navbar />
       <Intro />
     </div>
