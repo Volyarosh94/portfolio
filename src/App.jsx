@@ -5,17 +5,21 @@ import Outcomes from './sections/Outcomes'
 import Work from './sections/Work'
 import Contact from './sections/Contact'
 import Approach from './sections/Approach'
+import Intro from './sections/Intro'
 
 function App() {
 
   return (
-    <div className="mx-auto max-w-[1400px] lg:w-[1200px] md:w-[650px]">
+    <div>
       <Header />
-      <Approach />
-      <Experience />
-      <Work />
-      <Outcomes />
-      <Contact />
+      <div className="lg:grid lg:grid-cols-10 lg:gap-4 lg:px-4 md:mx-auto max-w-[1600px] lg:w-[1400px] md:w-[650px]">
+        <Intro />
+        <Approach />
+        <Experience />
+        <Work />
+        <Outcomes />
+        <Contact />
+      </div>
     </div>
   )
 }

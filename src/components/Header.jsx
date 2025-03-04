@@ -6,7 +6,6 @@ const Header = () => {
   return (
     <div className='lg:pt-14 md:pt-14'>
       <Navbar />
-      <Intro />
     </div>
   )
 }
