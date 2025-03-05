@@ -46,19 +46,19 @@ const Contact = () => {
             <div className="flex flex-col lg:gap-4 max-sm:gap-2 mt-[50px] text-lg">
                 <div className="flex items-center">
                     <img src={PhoneIcon} alt="Phone" className="mr-2 w-[20px] h-[20px]" />
-                    <span className="max-sm:text-[16px] lg:text-[22px] md:text-[20px] sm:text-[18px] max-sm:text-[19px]  font-firaSansRegular text-[#282B26]">
+                    <span className="max-sm:text-[16px] lg:text-[22px] md:text-[20px] sm:text-[18px] max-sm:text-[18px]  font-firaSansRegular text-[#282B26]">
                         +49 (0) 1525 1936697
                     </span>
                 </div>
                 <div className="flex items-center">
                     <img src={EmailIcon} alt="Email" className="mr-2 w-[20px] h-[20px]" />
-                    <span className="max-sm:text-[16px] lg:text-[22px] md:text-[20px] sm:text-[18px] max-sm:text-[19px]  font-firaSansRegular text-[#282B26]">
+                    <span className="max-sm:text-[16px] lg:text-[22px] md:text-[20px] sm:text-[18px] max-sm:text-[18px]  font-firaSansRegular text-[#282B26]">
                         charlesthorburn@protonmail.com
                     </span>
                 </div>
                 <div className="flex items-center">
                     <img src={LocationIcon} alt="Location" className="mr-2 w-[20px] h-[20px]" />
-                    <span className="max-sm:text-[16px] lg:text-[22px] md:text-[20px] sm:text-[18px] max-sm:text-[19px]  font-firaSansRegular text-[#282B26]">
+                    <span className="max-sm:text-[16px] lg:text-[22px] md:text-[20px] sm:text-[18px] max-sm:text-[18px]  font-firaSansRegular text-[#282B26]">
                         Friedrichshain, Berlin, Germany
                     </span>
                 </div>
