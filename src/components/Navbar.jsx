@@ -109,8 +109,8 @@ const Navbar = () => {
         <div className="group inline-flex items-center space-x-2 cursor-pointer relative"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
-          <h3 className="font-crimsonProSemi text-black text-2xl ml-3">Charles</h3>
-          <h3 className="font-crimsonProSemi text-black text-2xl ml-3 opacity-0 group-hover:opacity-100 duration-300">
+          <h3 className="font-crimsonProSemi text-black text-3xl ml-3">Charles</h3>
+          <h3 className="font-crimsonProSemi text-black text-3xl ml-3 opacity-0 group-hover:opacity-100 duration-300">
             Thorburn
           </h3>
         </div>
