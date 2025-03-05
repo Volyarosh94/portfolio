@@ -80,7 +80,7 @@ const Navbar = () => {
           </button>
         </div>
       </div>
-      <div className={`fixed inset-0 bg-[#F5F5F5] z-30 flex flex-col items-start justify-start lg:hidden w-full h-full overflow-hidden transition-transform duration-300 transform ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+      <div className={`fixed lg:static inset-0 bg-[#F5F5F5] z-30 flex flex-col items-start justify-start lg:hidden w-full h-full overflow-hidden transition-transform duration-300 transform ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         <div className="flex items-center justify-between mx-auto max-w-[700px] max-sm:max-w-[395px] sm:max-w-[650px] md:w-[650px] w-full max-sm:pl-[16px] pr-3">
           <h3 className="text-black text-2xl font-crimsonProSemi mt-4">Charles</h3>
           <button
@@ -118,7 +118,7 @@ const Navbar = () => {
         <ul className="mt-[60px]">
           {
             ["Intro", "Approach", "Experience", "Work", "Outcomes", "Contact"].map((section) => (
-              <li key={section} className="font-firaSansRegular font-light w-fit p-2 relative cursor-pointer text-[22px] hover:text-black focus:border-blue-500">
+              <li key={section} className="font-firaSansRegular font-light w-fit p-1.5 relative cursor-pointer text-[22px] hover:text-black focus:border-blue-500">
                 {activeSection.toLowerCase() === section.toLowerCase() && (
                   <span className="absolute left-[-10px] top-1/2 transform -translate-y-1/2 w-[7px] h-[7px] bg-black rounded-[32%]"></span>
                 )}
@@ -141,7 +141,7 @@ const Navbar = () => {
         <div className="absolute bottom-16 w-full p-2">
           <a
             href="https://www.linkedin.com/in/charles-thorburn-871b8a193/"
-            className="font-medium font-firaSansRegular text-black underline cursor-pointer z-10 text-xl focus:outline-none focus:ring-2 focus:ring-blue-500 p-1 rounded-sm"
+            className="font-medium font-firaSansRegular text-black underline cursor-pointer z-10 text-[20px] focus:outline-none focus:ring-2 focus:ring-blue-500 p-1 rounded-sm"
             target="_blank"
             alt="LinkedIn deep Link
                 to personal LI page.

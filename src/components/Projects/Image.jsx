@@ -15,15 +15,15 @@ const Image = ({ image1, image2, layout }) => {
 
     if (layout === "phone") {
         return (
-            <div className="relative h-[320px] w-full flex justify-center items-center">
-                <div className="relative w-[220px] h-[220px] lg:h-[270px] lg:w-[270px] lg:mt-32 mt-16">
+            <div className="relative h-[320px] max-sm:h-[220px] ma w-full flex justify-center items-center">
+                <div className="relative w-[220px] h-[220px] lg:h-[270px] lg:w-[270px]  lg:mt-20 mt-16">
                     <img
-                        className="w-full h-full lg:h-[220px] lg:w-[220px]  md:w-[200px] md:h-[200px] object-cover max-sm:w-[200px] max-sm:h-[200px]"
+                        className="w-full h-full lg:h-[240px] lg:w-[230px]  md:w-[200px] md:h-[200px] object-cover max-sm:w-[160px] max-sm:h-[160px]"
                         src={image1}
                         alt="A close-up image of a person next to their bike, holding a smartphone which displays the parry app, openon the map view. This image is overlayed with a second image, displaying a direct view of the parry app, open on the 'my spots' page. This page shows a segmented control, with 'Reported spots' selected, and another option to view 'Voted Spots'. The list of reported spots is currently ranked by most recent, with a dropdown menue offering other ranking options. This page also displays an app navigation bar at the bottom of the page, and a token balance at the top of the page next to the user's profile image."
                     />
                 </div>
-                <div className="absolute lg:top-[-3%] lg:left-[35%] left-[60%] top-[0%] md:top-[-5%] w-[200px] lg:h-[250px] lg:w-[300px] h-[300px] max-sm:w-[200px] max-sm:h-[270px] md:left-[55%] max-sm:left-[40%] max-sm:top-[1%] md:left-[50%] max-md:top-[-1%] max-md:left-[55%]">
+                <div className="absolute lg:top-[-3%] lg:left-[39%] left-[60%] top-[0%] md:top-[-5%] w-[200px] lg:h-[250px] lg:w-[300px] h-[300px] max-sm:w-[100px] max-sm:h-[270px] md:left-[55%] max-sm:left-[50%] max-sm:top-[-24%] md:left-[50%] max-md:top-[-1%] max-md:left-[55%]">
                     <img
                         className="w-full h-full lg:h-[310px] lg:w-[300px] md:w-[120px] md:h-[330px] object-contain"
                         src={image2}
@@ -36,17 +36,17 @@ const Image = ({ image1, image2, layout }) => {
 
     if (layout === "columnTwo") {
         return (
-            <div className="flex flex-col lg:pl-[40px] max-md:flex-row max-md:gap-2 max-md:justify-center max-sm:mb-[20px] max-md:items-center">
-                <div className="w-[220px] h-[160px] mb-2 max-sm:w-[180px] max-sm:h-[110px] max-sm:px-4 shadow-lg">
+            <div className="flex flex-col lg:pl-[40px] max-md:h-[250px] max-md:flex-row max-md:gap-2 max-md:justify-center max-sm:mb-[20px] max-md:items-center">
+                <div className="w-[220px] h-[160px] mb-2 max-sm:w-[180px] max-sm:h-[140px] max-sm:px-4 max-sm:object-contain shadow-lg">
                     <img
                         className="w-full h-full object-cover"
                         src={image1}
                         alt="Two screenshots of the Javelin app. The left screen show a user landing page, from where they can select content based on their current motivation, rather than from an algorithm. The right screen shows a curated playlist screen with the first video (BLACK HOLES) ready to play. The page also shows the curator, with a descriptive text for the video, and a list of other video thumbnails for the rest of the curated playlist."
                     />
                 </div>
-                <div className="w-[220px] h-[150px] mb-6 lg:ml-[40px] max-sm:ml-0 max-sm:w-[160px] max-sm:h-[80px] shadow-lg">
+                <div className="w-[220px] h-[150px] mb-6 lg:ml-[40px] max-sm:ml-0 max-sm:w-[160px] max-sm:h-[100px] shadow-lg">
                     <img
-                        className="w-full h-full object-contain max-sm:object-cover"
+                        className="w-full h-full object-contain max-sm:object-contain"
                         src={image2}
                         alt="Two screenshots of the Javelin app. The left screen show a user landing page, from where they can select content based on their current motivation, rather than from an algorithm. The right screen shows a curated playlist screen with the first video (BLACK HOLES) ready to play. The page also shows the curator, with a descriptive text for the video, and a list of other video thumbnails for the rest of the curated playlist."
                     />
