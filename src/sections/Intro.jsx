@@ -4,7 +4,7 @@ import line from '../assets/Highlight 2.png'
 
 const Intro = () => {
     return (
-        <div id="intro" className='lg:col-start-3 max-sm:mx-auto lg:col-end-9 mx-[30px] flex-1 max-w-[900px] max-sm:w-[360px]'>
+        <div id="intro" className='lg:col-start-4 max-sm:mx-auto lg:col-end-10 mx-[30px] flex-1 max-w-[900px] max-sm:w-[360px]'>
             <div className='max-md:text-[80px] lg:w-[800px] font-crimsonProSemi font-normal lg:text-[110px] text-[#282B26] md:text-[80px] max-sm:text-[40px] max-sm:mb-8 mt-[50px] text-left md:text-[70px] max-sm:text-[50px] leading-none'>
                 <span className='relative inline-block'>
                     <span className='relative z-10 text-semibold'>Regenerative</span>
@@ -26,7 +26,6 @@ const Intro = () => {
                     long term user, environmental, and social prosperity.
                 </p>
             </div>
-
         </div>
     )
 }

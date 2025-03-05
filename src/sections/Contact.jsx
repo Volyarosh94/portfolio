@@ -6,7 +6,7 @@ import Smile from '../assets/Smiles.png'
 
 const Contact = () => {
     return (
-        <div id="contact" className="lg:col-start-3 lg:col-end-9 max-sm:mx-auto  text-left mx-[30px] lg:mt-[520px] md:mt-[250px] sm:mt-[200px] max-sm:mt-[260px] max-w-[800px] md:w-[650px] max-sm:w-[355px]">
+        <div id="contact" className="lg:col-start-4 lg:col-end-10 max-sm:mx-auto  text-left mx-[30px] lg:mt-[520px] md:mt-[250px] sm:mt-[200px] max-sm:mt-[260px] max-w-[800px] md:w-[650px] max-sm:w-[355px]">
             <p className='lg:text-[22px] lg:w-[800px] md:text-[20px] sm:text-[18px] font-firaSansRegular font-normal leading-relaxed text-[#282B26]'>I would love to hear from you, especially if you are interested in working
                 together to make beautiful, valuable, and impactful products. </p>
             <div className="flex flex-col lg:gap-4 max-sm:gap-2 mt-[50px] text-lg">

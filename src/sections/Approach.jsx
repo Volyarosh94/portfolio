@@ -2,7 +2,7 @@ import discovery from '../assets/DiscoveryImg.png'
 
 const Approach = () => {
     return (
-        <div id="approach" className="lg:col-start-3 lg:col-end-9 max-sm:mx-auto  text-left mx-[30px] lg:mt-[410px] md:mt-[200px] sm:mt-[170px] max-sm:mt-[150px] max-w-[800px] md:w-[650px] max-sm:w-[360px]">
+        <div id="approach" className="lg:col-start-4 lg:col-end-10 max-sm:mx-auto  text-left mx-[30px] lg:mt-[410px] md:mt-[200px] sm:mt-[170px] max-sm:mt-[150px] max-w-[800px] md:w-[650px] max-sm:w-[360px]">
             <div className="mb-4 font-normal text-[#282B26] lg:w-[800px] lg:text-[22px] md:text-[20px] sm:text-[18px] font-normal font-firaSansRegular leading-normal md:w-[650px]">
                 <p>I collaborate with cross-functional teams through continuous discovery to build a deep understanding of the problem space, so we can deliver product outcomes that are viable, valuable, feasible, usable and ethical.</p>
             </div>

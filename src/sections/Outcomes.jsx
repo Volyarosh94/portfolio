@@ -2,7 +2,7 @@ import square from '../assets/Square.png'
 
 const Outcomes = () => {
     return (
-        <div id="outcomes" className="lg:col-start-3 lg:col-end-9 max-sm:mx-auto  text-left mx-[30px] lg:mt-[460px] md:mt-[250px] sm:mt-[200px] max-sm:mt-[150px] max-w-[800px]] md:w-[650px] max-sm:w-[355px]">
+        <div id="outcomes" className="lg:col-start-4 lg:col-end-10 max-sm:mx-auto  text-left mx-[30px] lg:mt-[460px] md:mt-[250px] sm:mt-[200px] max-sm:mt-[150px] max-w-[800px]] md:w-[650px] max-sm:w-[355px]">
             <div>
                 <p className="lg:w-[800px] text-[#282B26] lg:text-[22px] md:text-[20px] sm:text-[18px] font-firaSansRegular font-normal leading-relaxed md:w-[650px]">
                     Product has to deliver value. Here are some key outcomes I have contributed towards throughout my time in product design and leadership roles.

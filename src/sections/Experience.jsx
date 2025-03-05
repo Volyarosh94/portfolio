@@ -6,7 +6,7 @@ import n26 from '../assets/N26.png'
 
 const Experience = () => {
     return (
-        <div id="experience" className="lg:col-start-3 lg:col-end-9 max-sm:mx-auto  text-left mx-[30px] lg:mt-[460px] md:mt-[250px] sm:mt-[200px] max-sm:mt-[150px] max-w-[800px] md:w-[650px] max-sm:w-[355px]">
+        <div id="experience" className="lg:col-start-4 lg:col-end-10 max-sm:mx-auto  text-left mx-[30px] lg:mt-[460px] md:mt-[250px] sm:mt-[200px] max-sm:mt-[150px] max-w-[800px] md:w-[650px] max-sm:w-[355px]">
             <div>
                 <p className="text-[#282B26] lg:w-[800px] lg:text-[24px] md:text-[20px] sm:text-[18px] text-md font-firaSansRegular font-normal leading-relaxed md:w-[650px] max-sm:w-[360px]">
                     I work across finance, social media, AI, governance, and IoT sectors at fledgling startups, rapidly growing scale ups, and established corporate organisations.
