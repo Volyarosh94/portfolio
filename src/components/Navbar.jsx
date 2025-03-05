@@ -118,7 +118,7 @@ const Navbar = () => {
         <ul className="mt-[60px]">
           {
             ["Intro", "Approach", "Experience", "Work", "Outcomes", "Contact"].map((section) => (
-              <li key={section} className="font-firaSansRegular font-light w-fit p-2 relative cursor-pointer hover:text-black focus:border-blue-500">
+              <li key={section} className="font-firaSansRegular font-light w-fit p-2 relative cursor-pointer text-[22px] hover:text-black focus:border-blue-500">
                 {activeSection.toLowerCase() === section.toLowerCase() && (
                   <span className="absolute left-[-10px] top-1/2 transform -translate-y-1/2 w-[7px] h-[7px] bg-black rounded-[32%]"></span>
                 )}
@@ -138,7 +138,7 @@ const Navbar = () => {
             ))
           }
         </ul>
-        <div className="absolute bottom-8 w-full p-2">
+        <div className="absolute bottom-16 w-full p-2">
           <a
             href="https://www.linkedin.com/in/charles-thorburn-871b8a193/"
             className="font-medium font-firaSansRegular text-black underline cursor-pointer z-10 text-xl focus:outline-none focus:ring-2 focus:ring-blue-500 p-1 rounded-sm"

@@ -3,7 +3,7 @@ import ImageList from '../components/Projects/ImageList';
 
 const Work = () => {
     return (
-        <div id="work" className="lg:col-start-3 lg:col-end-11 text-left mx-auto lg:mt-[460px] md:mt-[250px] sm:mt-[200px] max-sm:mt-[150px] max-w-[1000px] lg:w-[1000px] w-full md:w-[670px] max-sm:w-[355px]">
+        <div id="work" className="lg:col-start-3 lg:col-end-11 text-left mx-auto lg:mt-[350px] md:mt-[250px] sm:mt-[200px] max-sm:mt-[150px] max-w-[1000px] lg:w-[1000px] w-full md:w-[670px] max-sm:w-[355px]">
             <div className="space-y-10 max-md:mx-6">
                 {[1, 2, 3, 4, 5].map((index) => (
                     <div key={index} className="bg-[#F9F9F9] rounded-xl px-8 pt-8 border-[1.5px] border-gray-200">

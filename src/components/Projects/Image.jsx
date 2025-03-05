@@ -16,16 +16,16 @@ const Image = ({ image1, image2, layout }) => {
     if (layout === "phone") {
         return (
             <div className="relative h-[320px] w-full flex justify-center items-center">
-                <div className="relative w-[220px] h-[220px] lg:h-[270px] lg:w-[270px] mt-16">
+                <div className="relative w-[220px] h-[220px] lg:h-[270px] lg:w-[270px] lg:mt-32 mt-16">
                     <img
                         className="w-full h-full lg:h-[220px] lg:w-[220px]  md:w-[200px] md:h-[200px] object-cover max-sm:w-[200px] max-sm:h-[200px]"
                         src={image1}
                         alt="A close-up image of a person next to their bike, holding a smartphone which displays the parry app, openon the map view. This image is overlayed with a second image, displaying a direct view of the parry app, open on the 'my spots' page. This page shows a segmented control, with 'Reported spots' selected, and another option to view 'Voted Spots'. The list of reported spots is currently ranked by most recent, with a dropdown menue offering other ranking options. This page also displays an app navigation bar at the bottom of the page, and a token balance at the top of the page next to the user's profile image."
                     />
                 </div>
-                <div className="absolute lg:top-[-3%] lg:left-[60%] left-[60%] top-[0%] md:top-[-5%] w-[200px] lg:w-[150px] lg:w-[300px] h-[300px] max-sm:w-[200px] max-sm:h-[270px] md:left-[55%] max-sm:left-[40%] max-sm:top-[1%] md:left-[50%] max-md:top-[-1%] max-md:left-[55%]">
+                <div className="absolute lg:top-[-3%] lg:left-[35%] left-[60%] top-[0%] md:top-[-5%] w-[200px] lg:h-[250px] lg:w-[300px] h-[300px] max-sm:w-[200px] max-sm:h-[270px] md:left-[55%] max-sm:left-[40%] max-sm:top-[1%] md:left-[50%] max-md:top-[-1%] max-md:left-[55%]">
                     <img
-                        className="w-full h-full lg:w-[130px] lg:w-[300px] md:w-[120px] md:h-[330px] object-contain"
+                        className="w-full h-full lg:h-[310px] lg:w-[300px] md:w-[120px] md:h-[330px] object-contain"
                         src={image2}
                         alt="A close-up image of a person next to their bike, holding a smartphone which displays the parry app, openon the map view. This image is overlayed with a second image, displaying a direct view of the parry app, open on the 'my spots' page. This page shows a segmented control, with 'Reported spots' selected, and another option to view 'Voted Spots'. The list of reported spots is currently ranked by most recent, with a dropdown menue offering other ranking options. This page also displays an app navigation bar at the bottom of the page, and a token balance at the top of the page next to the user's profile image."
                     />
@@ -74,14 +74,14 @@ const Image = ({ image1, image2, layout }) => {
         <div className="flex gap-4 lh-[300px] max-md:flex max-md:mb-[20px] max-md:justify-center max-md:items-center max-md:gap-8 lg:mb-8 md:mb-4 max-sm:mb-6">
             <div className="lg:w-1/2 md:w-[100px]">
                 <img
-                    className="lg:h-[300px] max-md:h-[300px] md:h-[260px] max-sm:h-[250px] rounded-xl"
+                    className="lg:h-[325px] max-md:h-[300px] md:h-[260px] max-sm:h-[250px] rounded-xl"
                     src={image1}
                     alt="An image showing two side-by-side screenshots of the tado app. The left image shows the 'Balance' feature, currently focused on how water, as apposed to room heating, which the user can navigate to via a segmented control at the top of the page. A graph shoes the daily balance interventions alongside the temperature set point and cost of heating value, and the photovoltaic activity (PV). The second screen shows an orange screen with white text — the room heating screen, with the set point temperature and a large slider element for manual adjustments. Below the slider the user has the option to return 'to the schedule' via a button, and information about when their manually set set point will return to the schedule. "
                 />
             </div>
             <div className="lg:w-1/2 md:w-[100px]">
                 <img
-                    className="lg:h-[300px] max-md:h-[300px] md:h-[260px] max-sm:h-[250px]  rounded-xl"
+                    className="lg:h-[325px] max-md:h-[300px] md:h-[260px] max-sm:h-[250px]  rounded-xl"
                     src={image2}
                     alt="An image showing two side-by-side screenshots of the tado app. The left image shows the 'Balance' feature, currently focused on how water, as apposed to room heating, which the user can navigate to via a segmented control at the top of the page. A graph shoes the daily balance interventions alongside the temperature set point and cost of heating value, and the photovoltaic activity (PV). The second screen shows an orange screen with white text — the room heating screen, with the set point temperature and a large slider element for manual adjustments. Below the slider the user has the option to return 'to the schedule' via a button, and information about when their manually set set point will return to the schedule. "
                 />
