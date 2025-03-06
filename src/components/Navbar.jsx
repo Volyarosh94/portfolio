@@ -80,7 +80,7 @@ const Navbar = () => {
           </button>
         </div>
       </div>
-      <div className={`fixed lg:static inset-0 bg-[#F5F5F5] z-30 flex flex-col items-start justify-start lg:hidden w-full h-full overflow-hidden transition-transform duration-300 transform ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+      <div className={`fixed inset-0 bg-[#F5F5F5] z-30 flex flex-col items-start justify-start lg:hidden w-full h-full overflow-hidden transition-transform duration-300 transform ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         <div className="flex items-center justify-between mx-auto max-w-[700px] max-sm:max-w-[395px] sm:max-w-[650px] md:w-[650px] w-full max-sm:pl-[16px] pr-3">
           <h3 className="text-black text-2xl font-crimsonProSemi mt-4">Charles</h3>
           <button

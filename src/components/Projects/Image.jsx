@@ -15,17 +15,17 @@ const Image = ({ image1, image2, layout }) => {
 
     if (layout === "phone") {
         return (
-            <div className="relative h-[320px] max-sm:h-[220px] ma w-full flex justify-center items-center">
-                <div className="relative w-[220px] h-[220px] lg:h-[270px] lg:w-[270px]  lg:mt-20 mt-16">
+            <div className="relative md:h-[300px] h-[320px] max-sm:h-[220px] w-full flex lg:justify-start justify-center items-center">
+                <div className="relative w-[220px] h-[220px] lg:h-[270px] lg:w-[250px]  lg:mt-20 mt-16">
                     <img
-                        className="w-full h-full lg:h-[240px] lg:w-[230px]  md:w-[200px] md:h-[200px] object-cover max-sm:w-[160px] max-sm:h-[160px]"
+                        className="w-full h-full lg:h-[250px] lg:w-[235px]  md:w-[200px] md:h-[200px] object-cover max-sm:w-[160px] max-sm:h-[160px]"
                         src={image1}
                         alt="A close-up image of a person next to their bike, holding a smartphone which displays the parry app, openon the map view. This image is overlayed with a second image, displaying a direct view of the parry app, open on the 'my spots' page. This page shows a segmented control, with 'Reported spots' selected, and another option to view 'Voted Spots'. The list of reported spots is currently ranked by most recent, with a dropdown menue offering other ranking options. This page also displays an app navigation bar at the bottom of the page, and a token balance at the top of the page next to the user's profile image."
                     />
                 </div>
-                <div className="absolute lg:top-[-3%] lg:left-[39%] left-[60%] top-[0%] md:top-[-5%] w-[200px] lg:h-[250px] lg:w-[300px] h-[300px] max-sm:w-[100px] max-sm:h-[270px] md:left-[55%] max-sm:left-[50%] max-sm:top-[-24%] md:left-[50%] max-md:top-[-1%] max-md:left-[55%]">
+                <div className="absolute lg:top-[-1%] lg:left-[34%] left-[60%] top-[0%] md:h-[360px] md:top-[-15%] w-[200px] lg:h-[250px] lg:w-[300px] h-[300px] max-sm:w-[100px] max-sm:h-[270px] md:left-[60%] max-sm:left-[50%] max-sm:top-[-24%]  max-md:top-[-1%] max-md:left-[55%]">
                     <img
-                        className="w-full h-full lg:h-[310px] lg:w-[300px] md:w-[120px] md:h-[330px] object-contain"
+                        className="w-full h-full lg:h-[305px] lg:w-[290px] md:w-[130px] md:h-[360px] object-contain"
                         src={image2}
                         alt="A close-up image of a person next to their bike, holding a smartphone which displays the parry app, openon the map view. This image is overlayed with a second image, displaying a direct view of the parry app, open on the 'my spots' page. This page shows a segmented control, with 'Reported spots' selected, and another option to view 'Voted Spots'. The list of reported spots is currently ranked by most recent, with a dropdown menue offering other ranking options. This page also displays an app navigation bar at the bottom of the page, and a token balance at the top of the page next to the user's profile image."
                     />
