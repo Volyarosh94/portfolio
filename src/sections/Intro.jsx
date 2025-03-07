@@ -14,7 +14,7 @@ const Intro = () => {
                 <span className='text-semibold'>Product Designer</span>
             </div>
 
-            <div className='lg:flex sm:flex-col lg:w-[800px] sm:items-center lg:flex-row md:w-[650px] lg:gap-[85px] md:gap-[40px] max-sm:justify-start'>
+            <div className='lg:flex sm:flex-col lg:w-[800px] sm:items-center lg:flex-row md:w-[650px] lg:gap-[75px] md:gap-[40px] max-sm:justify-start'>
                 <div className='relative max-sm:flex max-sm:flex-col max-md:flex max-md:mb-[50px] md:items-start max-md:items-start max-sm:items-start md:flex md:justify-start md:mb-[70px] max-sm:mt-[50px] md:mt-[70px] max-md:mt-[70px]'>
                     <img className="lg:left-[81%] lg:bottom-[77%] absolute lg:w-[80px] lg:h-[80px] md:w-[80px] md:h-[80px] md:left-[25%] md:bottom-[85%] md:w-[70px] md:h-[70px] sm:left-[25%] sm:bottom-[85%] sm:w-[90px] sm:h-[90px] max-sm:w-[80px] max-sm:h-[80px] max-sm:left-[46%] max-sm:bottom-[80%] drop-shadow-lg" src={pen} alt="pencil" />
                     <img className="lg:w-[175px] lg:h-[190px] object-contain mx-2.5 max-sm:ml-[0px] md:w-[205px] md:h-[200px] sm:w-[205px] sm:h-[200px] max-sm:w-[205px] max-sm:h-[200px] object-contain object-center" src={portrait} alt="A circular profile photo of charles thorburn with a yellow border, being drawn by an interactive whiteboard style pencil icon. The photo shows charles wearing a black t-shirt, against a light background." />
