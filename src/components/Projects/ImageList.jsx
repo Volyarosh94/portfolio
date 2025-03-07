@@ -1,8 +1,8 @@
 import Image from './Image';
-import balance from '../../assets/Balance1.png';
+import balance from '../../assets/Balance (2).png';
 import grafics from '../../assets/grafics.png';
 import samsung from '../../assets/samsung.png';
-import mySpots from '../../assets/mySpots.png';
+import mySpots from '../../assets/My Spots (1).png';
 import videoPlayer from '../../assets/videoPlayer.png';
 import desktop from '../../assets/Desktop.png';
 import woman from '../../assets/HandPng.png';

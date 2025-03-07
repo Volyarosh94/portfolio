@@ -7,9 +7,9 @@ import javelin2 from '../../assets/Javelin2.png';
 
 const Card = ({ title, text, technologies, logo }) => {
     return (
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 lg:mb-8 lg:pt-4">
             <div className="space-y-4">
-                <h2 className="lg:text-[40px] md:text-[30px] sm:text-[28px] max-sm:text-[24px] font-semibold text-[#282B26] text-left lg:mb-5 mb-2 font-crimsonProSemi leading-none">{title}</h2>
+                <h2 className="lg:text-[40px] md:text-[30px] sm:text-[28px] max-sm:text-[24px] font-medium text-[#282B26] text-left lg:mb-5 mb-2 font-crimsonProSemi leading-none">{title}</h2>
                 <p className="text-[16px] lg:text-[19px] text-[#282B26] text-left pb-2 lg:mb-5 font-normal leading-relaxed font-firaSansRegular">{text}</p>
                 <div className="flex flex-wrap gap-2">
                     {technologies.map((tech, index) => (
