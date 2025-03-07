@@ -36,7 +36,7 @@ const Image = ({ image1, image2, layout }) => {
 
     if (layout === "columnTwo") {
         return (
-            <div className="flex flex-col lg:pl-[40px] max-md:h-[250px] lg:w-[360px] md:w-[300px] max-md:flex-row max-md:gap-2 max-md:justify-center max-sm:h] max-md:items-center">
+            <div className="flex flex-col lg:pl-[40px] max-md:h-[250px] lg:w-[360px] max-sm:h-[200px] md:w-[300px] max-md:flex-row max-md:gap-2 max-md:justify-center max-sm:h] max-md:items-center">
                 <div className="w-[220px] h-[160px] lg:w-[260px] lg:h-[185px] mb-2 max-sm:w-[180px] max-sm:h-[140px] max-sm:px-4 max-sm:object-contain shadow-lg">
                     <img
                         className="w-full h-full object-cover max-sm:object-contain"
