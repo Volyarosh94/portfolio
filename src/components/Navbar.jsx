@@ -109,8 +109,8 @@ const Navbar = () => {
         <div className="group inline-flex items-center space-x-2 cursor-pointer relative"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
-          <h3 className="font-crimsonProSemi text-black text-3xl ml-3">Charles</h3>
-          <h3 className="font-crimsonProSemi text-black text-3xl ml-3 opacity-0 group-hover:opacity-100 duration-300">
+          <h3 className="font-crimsonProSemi  text-3xl ml-3">Charles</h3>
+          <h3 className="font-crimsonProSemi text-3xl ml-3 opacity-0 group-hover:opacity-100 duration-300">
             Thorburn
           </h3>
         </div>
@@ -120,7 +120,7 @@ const Navbar = () => {
             ["Intro", "Approach", "Experience", "Work", "Outcomes", "Contact"].map((section) => (
               <li key={section} className="font-firaSansRegular font-light w-fit p-1.5 relative cursor-pointer text-[22px] hover:text-black focus:border-blue-500">
                 {activeSection.toLowerCase() === section.toLowerCase() && (
-                  <span className="absolute left-[-10px] top-1/2 transform -translate-y-1/2 w-[7px] h-[7px] bg-black rounded-[32%]"></span>
+                  <span className="absolute left-[-5px] top-1/2 transform -translate-y-1/2 w-[7px] h-[8px] bg-black rounded-[32%]"></span>
                 )}
                 <span
                   tabIndex="0"
@@ -141,7 +141,7 @@ const Navbar = () => {
         <div className="absolute bottom-16 w-full p-2">
           <a
             href="https://www.linkedin.com/in/charles-thorburn-871b8a193/"
-            className="font-medium font-firaSansRegular text-black underline cursor-pointer z-10 text-[20px] focus:outline-none focus:ring-2 focus:ring-blue-500 p-1 rounded-sm"
+            className="font-medium font-firaSansRegular underline cursor-pointer z-10 text-[22px] focus:outline-none focus:ring-2 focus:ring-blue-500 p-1 rounded-sm"
             target="_blank"
             alt="LinkedIn deep Link
                 to personal LI page.

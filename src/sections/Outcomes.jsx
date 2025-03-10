@@ -2,7 +2,7 @@ import square from '../assets/Square.png'
 
 const Outcomes = () => {
     return (
-        <div id="outcomes" className="lg:col-start-4 lg:col-end-10 max-sm:mx-auto  text-left mx-[30px] lg:mb-[110px] lg:mt-[400px]  md:mt-[250px] sm:mt-[200px] max-sm:mt-[150px] max-w-[800px]] md:w-[650px] max-sm:w-[355px]">
+        <div id="outcomes" className="lg:col-start-4 lg:col-end-10 max-sm:mx-auto  text-left mx-[30px] lg:mb-[110px] lg:mt-[250px]  md:mt-[250px] sm:mt-[200px] max-sm:mt-[150px] max-w-[800px]] md:w-[650px] max-sm:w-[355px]">
             <div>
                 <p className="lg:w-[800px] text-[#282B26] lg:text-[22px] lg:leading-[40px] md:leading-[40px] sm:leading-[35px] max-sm:leading-[30px] md:text-[19px] sm:text-[18px] max-sm:text-[18px] font-firaSansRegular font-normal leading-relaxed md:w-[650px]">
                     Product has to deliver value. Here are some key outcomes I have contributed towards throughout my time in product design and leadership roles.
@@ -11,11 +11,16 @@ const Outcomes = () => {
             <div className="mt-[20px] lg:py-8 lg:w-[800px] md:w-[550px] md:py-2 max-sm:relative lg:relative">
                 <div className="grid grid-cols-3 max-sm:grid-cols-2 lg:gap-[60px] md:gap-[40px] justify-items-center">
                     <div className="flex flex-col items-center">
-                        <h2 className="lg:text-7xl font-medium font-crimsonProSemi max-md:text-4xl md:text-5xl max-sm:text-4xl">3M+</h2>
+                        <h2 className="lg:text-7xl font-medium font-crimsonProSemi max-md:text-4xl md:text-5xl max-sm:text-4xl">3
+                            <span className="lg:text-6xl font-medium font-crimsonProSemi max-md:text-4xl md:text-5xl max-sm:text-4xl">M+</span>
+                        </h2>
+
                         <p className="mt-1 lg:text-[19px] text-[#4B4B4B] md:text-sm font-firaSansRegular max-sm:max-w-[40px] max-sm:text-[14px] max-sm:leading-tight text-center">Euros Raised</p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <h2 className="lg:text-7xl font-medium font-crimsonProSemi max-md:text-4xl md:text-5xl max-sm:text-4xl">9M+</h2>
+                        <h2 className="lg:text-7xl font-medium font-crimsonProSemi max-md:text-4xl md:text-5xl max-sm:text-4xl">9
+                            <span className="lg:text-6xl font-medium font-crimsonProSemi max-md:text-4xl md:text-5xl max-sm:text-4xl">M+</span>
+                        </h2>
                         <p className="mt-1 lg:text-[19px] text-[#4B4B4B] md:text-sm max-sm:text-[14px] max-sm:leading-tight font-firaSansRegular max-sm:max-w-[40px] text-center">Users Served</p>
                     </div>
                     <div className="flex flex-col items-center">
@@ -29,7 +34,7 @@ const Outcomes = () => {
                 </div>
                 <div>
                     <img
-                        className='max-sm:w-[200px] max-sm:h-[130px] max-md:w-[220px] max-sm:absolute max-md:h-[140px] max-sm:left-[30%] max-sm:top-[110%] lg:w-[200px] lg:h-[130px] md:w-[200px] md:h-[130px] lg:absolute lg:left-[70%] lg:top-[90%]'
+                        className='max-sm:w-[200px] max-sm:h-[130px] max-md:w-[220px] max-sm:absolute max-md:h-[140px] max-sm:left-[30%] max-sm:top-[110%] lg:w-[280px] lg:h-[180px] md:w-[200px] md:h-[130px] lg:absolute lg:left-[60%] lg:top-[90%]'
                         src={square} alt="An interactive whiteboard style yellow sticky note over-which three cursors pointing to the outcome values: an orange cursor labeled 'Business' at the top, a purple cursor labeled 'People' on the left, and a blue cursor labeled 'Planet' on the right." />
                 </div>
             </div >
