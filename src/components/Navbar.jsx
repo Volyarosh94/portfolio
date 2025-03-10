@@ -65,7 +65,7 @@ const Navbar = () => {
   return (
     <div>
       <div className={`fixed top-0 left-0 w-full bg-[#F0F0EF] py-1 z-20 lg:hidden py-4 transition-transform duration-200 transform ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
-        <div className="flex items-center justify-between mx-auto max-w-[700px] max-sm:max-w-[395px] sm:max-w-[650px] md:w-[650px] md:pl-8 w-full max-sm:pl-[16px] pr-3 ">
+        <div className="flex items-center justify-between mx-auto max-w-[700px] max-sm:max-w-[395px] sm:max-w-[650px] md:w-[650px] md:pl-8 w-full max-sm:pl-[16px] pr-3 md:pr-0">
           <h3
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="font-crimsonProSemi text-black text-2xl"

@@ -11,19 +11,19 @@ const Outcomes = () => {
             <div className="mt-[20px] lg:py-8 lg:w-[800px] md:w-[550px] md:py-2 max-sm:relative lg:relative">
                 <div className="grid grid-cols-3 max-sm:grid-cols-2 lg:gap-[60px] md:gap-[40px] justify-items-center">
                     <div className="flex flex-col items-center">
-                        <h2 className="lg:text-7xl font-medium font-crimsonProSemi max-md:text-4xl md:text-4xl max-sm:text-4xl">3M+</h2>
+                        <h2 className="lg:text-7xl font-medium font-crimsonProSemi max-md:text-4xl md:text-5xl max-sm:text-4xl">3M+</h2>
                         <p className="mt-1 lg:text-[19px] text-[#4B4B4B] md:text-sm font-firaSansRegular max-sm:max-w-[40px] max-sm:text-[14px] max-sm:leading-tight text-center">Euros Raised</p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <h2 className="lg:text-7xl font-medium font-crimsonProSemi max-md:text-4xl md:text-4xl max-sm:text-4xl">9M+</h2>
+                        <h2 className="lg:text-7xl font-medium font-crimsonProSemi max-md:text-4xl md:text-5xl max-sm:text-4xl">9M+</h2>
                         <p className="mt-1 lg:text-[19px] text-[#4B4B4B] md:text-sm max-sm:text-[14px] max-sm:leading-tight font-firaSansRegular max-sm:max-w-[40px] text-center">Users Served</p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <h2 className="lg:text-7xl font-medium font-crimsonProSemi max-md:text-4xl md:text-4xl max-sm:text-4xl">4.8</h2>
+                        <h2 className="lg:text-7xl font-medium font-crimsonProSemi max-md:text-4xl md:text-5xl max-sm:text-4xl">4.8</h2>
                         <p className="mt-1 lg:text-[19px] text-[#4B4B4B] md:text-sm max-sm:text-[14px] max-sm:leading-tight font-firaSansRegular text-center whitespace-normal lg:max-w-[130px] md:max-w-[100px] sm:max-w-[100px] max-sm:max-w-[80px]">Ø App Store Rating</p>
                     </div>
                     <div className="lg:col-span-3 md:col-span-3 max-sm:col-span-1 max-md:col-span-3 max-md:mt-[20px] max-sm:mt-[0px] flex flex-col items-center">
-                        <h2 className="lg:text-7xl font-medium font-crimsonProSemi max-md:text-4xl md:text-4xl max-sm:text-4xl">-28%</h2>
+                        <h2 className="lg:text-7xl font-medium font-crimsonProSemi max-md:text-4xl md:text-5xl max-sm:text-4xl">-28%</h2>
                         <p className="mt-1 lg:text-[19px] text-[#4B4B4B] md:text-sm max-sm:text-[14px] max-sm:leading-tight font-firaSansRegular text-center whitespace-normal lg:max-w-[180px] md:max-w-[140px] sm:max-w-[140px] max-sm:max-w-[100px]">Household Energy Consumption</p>
                     </div>
                 </div>

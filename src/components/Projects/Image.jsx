@@ -23,7 +23,7 @@ const Image = ({ image1, image2, layout }) => {
                         alt="A close-up image of a person next to their bike, holding a smartphone which displays the parry app, openon the map view. This image is overlayed with a second image, displaying a direct view of the parry app, open on the 'my spots' page. This page shows a segmented control, with 'Reported spots' selected, and another option to view 'Voted Spots'. The list of reported spots is currently ranked by most recent, with a dropdown menue offering other ranking options. This page also displays an app navigation bar at the bottom of the page, and a token balance at the top of the page next to the user's profile image."
                     />
                 </div>
-                <div className="absolute lg:top-[5%] lg:left-[37%] left-[60%] top-[0%] md:h-[360px] md:top-[-10%] w-[200px] lg:h-[250px] lg:w-[300px] h-[300px] max-sm:w-[100px] max-sm:h-[270px] md:left-[50%] max-sm:left-[50%] max-sm:top-[-24%]  max-md:top-[-1%] max-md:left-[55%]">
+                <div className="absolute lg:top-[5%] lg:left-[39%] left-[60%] top-[0%] md:h-[360px] md:top-[-10%] w-[200px] lg:h-[250px] lg:w-[300px] h-[300px] max-sm:w-[100px] max-sm:h-[270px] md:left-[50%] max-sm:left-[50%] max-sm:top-[-24%]  max-md:top-[-1%] max-md:left-[55%]">
                     <img
                         className="w-full h-full lg:h-[320px] lg:w-[285px] md:w-[130px] md:h-[360px] object-contain"
                         src={image2}
@@ -60,7 +60,7 @@ const Image = ({ image1, image2, layout }) => {
             <div className="flex flex-col gap-4 lg:w-[360px] md:w-[300px] lg:pl-[80px] md:pr-[40px] max-md:flex max-md:justify-center max-md:items-center">
                 <div className="lg:w-[340px] lg:h-[395px] md:w-[200px] md:h-[330px] max-md:w-[22\40px] max-md:h-[280px] max-sm:w-[195px] max-sm:h-[230px] md:w-[360px] md:h-[350px]">
                     <img
-                        className="w-full h-full md:ml-[-30px] object-cover md:object-contain rounded-xl"
+                        className="w-full h-full md:ml-[-30px] lg:ml-[-40px] object-cover md:object-contain rounded-xl"
                         src={image1}
                         alt="A close-up of a hand holding a smartphone. The screen displays a an N26  customer support chat, in which the user has chosen to speak with a human support specialist.The chat provides a written statement that the user is 'Chatting with a N26 specialist', and is shown an support icon depicting a person, as apposed to a 'bot' support agent in the previous replies."
                     />

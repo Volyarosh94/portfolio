@@ -13,7 +13,7 @@ const Experience = () => {
                 </p>
             </div>
             <div className="flex flex-col lg:w-[800px] items-center mt-[40px] justify-center">
-                <div className="flex w-full justify-center max-sm:justify-start lg:gap-[90px] md:gap-[60px] max-md:gap-[30px]">
+                <div className="flex w-full justify-center max-sm:justify-start lg:gap-[80px] md:gap-[60px] max-md:gap-[30px]">
                     <img src={n26} alt="five company logos arranged in two rows: Top row shows N26 (stylized with a line above), Javelin, and Key Ward. Bottom row displays CitizenTech (with a globe icon) and tado° (styled with a degree symbol). All logos are presented in black against a light background." className="lg:h-16 md:h-[40px] max-md:h-[20px] sm:h-[40px] max-sm:h-[28px] mx-2" />
                     <img src={javelin} alt="five company logos arranged in two rows: Top row shows N26 (stylized with a line above), Javelin, and Key Ward. Bottom row displays CitizenTech (with a globe icon) and tado° (styled with a degree symbol). All logos are presented in black against a light background." className="lg:h-12 md:h-[40px] max-md:h-[20px] sm:h-[40px] mx-2" />
                     <img src={keyWord} alt="five company logos arranged in two rows: Top row shows N26 (stylized with a line above), Javelin, and Key Ward. Bottom row displays CitizenTech (with a globe icon) and tado° (styled with a degree symbol). All logos are presented in black against a light background." className="lg:h-12 md:h-[40px] max-md:h-[20px] sm:h-[40px] mx-2" />
