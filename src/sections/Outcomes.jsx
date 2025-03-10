@@ -29,7 +29,7 @@ const Outcomes = () => {
                 </div>
                 <div>
                     <img
-                        className='max-sm:w-[150px] max-sm:h-[100px] max-md:w-[220px] max-sm:absolute max-md:h-[140px] max-sm:left-[40%] max-sm:top-[110%] lg:w-[200px] lg:h-[130px] md:w-[200px] md:h-[130px] lg:absolute lg:left-[70%] lg:top-[90%]'
+                        className='max-sm:w-[200px] max-sm:h-[130px] max-md:w-[220px] max-sm:absolute max-md:h-[140px] max-sm:left-[30%] max-sm:top-[110%] lg:w-[200px] lg:h-[130px] md:w-[200px] md:h-[130px] lg:absolute lg:left-[70%] lg:top-[90%]'
                         src={square} alt="An interactive whiteboard style yellow sticky note over-which three cursors pointing to the outcome values: an orange cursor labeled 'Business' at the top, a purple cursor labeled 'People' on the left, and a blue cursor labeled 'Planet' on the right." />
                 </div>
             </div >
