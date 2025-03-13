@@ -4,7 +4,7 @@ const Outcomes = () => {
     return (
         <div id="outcomes" className="lg:col-start-4 lg:col-end-10 max-sm:mx-auto  text-left mx-[30px] lg:mb-[110px] lg:mt-[250px]  md:mt-[250px] sm:mt-[200px] max-sm:mt-[150px] max-w-[800px]] md:w-[650px] max-sm:w-[355px]">
             <div>
-                <p className="lg:w-[800px] text-[#282B26] lg:text-[22px] lg:leading-[40px] md:leading-[40px] sm:leading-[35px] max-sm:leading-[30px] md:text-[19px] sm:text-[18px] max-sm:text-[18px] font-firaSansRegular font-normal leading-relaxed md:w-[650px]">
+                <p style={{ fontFamily: 'FiraSans-regular', fontWeight: 500 }} className="lg:w-[800px] text-[#282B26] lg:text-[22px] lg:leading-[40px] md:leading-[40px] sm:leading-[35px] max-sm:leading-[30px] md:text-[19px] sm:text-[18px] max-sm:text-[18px] font-firaSansRegular font-normal leading-relaxed md:w-[650px]">
                     Product has to deliver value. Here are some key outcomes I have contributed towards throughout my time in product design and leadership roles.
                 </p>
             </div>

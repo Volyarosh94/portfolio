@@ -39,7 +39,7 @@ const Contact = () => {
             id="contact"
             className="lg:col-start-4 lg:col-end-10 max-sm:mx-auto text-left mx-[30px] lg:mt-[250px] md:mb-4 sm:mb-4 max-sm:mb-4 lg:top-0  md:mt-[250px] sm:mt-[200px] max-sm:mt-[260px] max-w-[800px] md:w-[650px] max-sm:w-[355px]"
         >
-            <p className="lg:text-[22px] lg:w-[800px] md:text-[20px] sm:text-[18px] max-sm:text-[18px] lg:leading-[40px] md:leading-[40px] sm:leading-[35px] max-sm:leading-[30px] font-firaSansRegular font-normal leading-relaxed text-[#282B26]">
+            <p style={{ fontFamily: 'FiraSans-regular', fontWeight: 500 }} className="lg:text-[22px] lg:w-[800px] md:text-[20px] sm:text-[18px] max-sm:text-[18px] lg:leading-[40px] md:leading-[40px] sm:leading-[35px] max-sm:leading-[30px] font-firaSansRegular font-normal leading-relaxed text-[#282B26]">
                 I would love to hear from you, especially if you are interested in working
                 together to make beautiful, valuable, and impactful products.
             </p>

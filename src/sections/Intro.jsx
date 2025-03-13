@@ -19,7 +19,7 @@ const Intro = () => {
                     <img className="lg:left-[81%] lg:bottom-[77%] absolute lg:w-[80px] lg:h-[80px] md:w-[80px] md:h-[80px] md:left-[25%] md:bottom-[85%] md:w-[70px] md:h-[70px] sm:left-[25%] sm:bottom-[85%] sm:w-[90px] sm:h-[90px] max-sm:w-[80px] max-sm:h-[80px] max-sm:left-[46%] max-sm:bottom-[80%] drop-shadow-lg" src={pen} alt="pencil" />
                     <img className="lg:w-[175px] lg:h-[190px] object-contain mx-2.5 max-sm:ml-[0px] md:w-[205px] md:h-[200px] sm:w-[205px] sm:h-[200px] max-sm:w-[205px] max-sm:h-[200px] object-contain object-center" src={portrait} alt="A circular profile photo of charles thorburn with a yellow border, being drawn by an interactive whiteboard style pencil icon. The photo shows charles wearing a black t-shirt, against a light background." />
                 </div>
-                <p className='lg:col-start-3 max-sm:text-left lg:text-[22px] lg:leading-[38px] md:leading-[40px] sm:leading-[35px] max-sm:leading-[30px] md:text-[19px] sm:text-[18px] lg:mt-[10px] max-sm:text-[18px] lg:max-w-xl lg:w-[700px] md:w-[650px] text-left text-md font-firaSansRegular leading-relaxed text-[#282B26]'>
+                <p style={{ fontFamily: 'FiraSans-regular', fontWeight: 500 }} className='lg:col-start-3 max-sm:text-left lg:text-[22px] lg:leading-[38px] md:leading-[40px] sm:leading-[35px] max-sm:leading-[30px] md:text-[19px] sm:text-[18px] lg:mt-[10px] max-sm:text-[18px] lg:max-w-xl lg:w-[700px] md:w-[650px] text-left text-md font-firaSansRegular leading-relaxed text-[#282B26]'>
                     Hi there, I'm Charles Thorburn. I'm a Berlin based
                     digital product designer and leader helping
                     companies of all sizes meet business objectives for
