@@ -11,6 +11,8 @@ export default {
         crimsonProSemi: ["CrimsonPro-semibold"],
         firaSansRegular: ["FiraSans-regular"],
         firaSansSemi: ["FiraSans-semibold"],
+        fira: ['Fira Sans', 'sans-serif'],
+        crimson: ['Crimson Pro', 'serif'],
       },
       colors: {
         customGray: '#282B26',

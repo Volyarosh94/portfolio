@@ -118,9 +118,9 @@ const Navbar = () => {
         <ul className="mt-[60px]">
           {
             ["Intro", "Approach", "Experience", "Work", "Outcomes", "Contact"].map((section) => (
-              <li key={section} className="font-firaSansRegular font-light w-fit p-1.5 relative cursor-pointer text-[22px] hover:text-black focus:border-blue-500">
+              <li key={section} className="font-fira font-[300] w-fit p-1.5 relative cursor-pointer text-[22px] hover:text-black focus:border-blue-500">
                 {activeSection.toLowerCase() === section.toLowerCase() && (
-                  <span className="absolute left-[-5px] top-1/2 transform -translate-y-1/2 w-[7px] h-[8px] bg-black rounded-[32%]"></span>
+                  <span className="absolute left-[-5px]  top-1/2 transform -translate-y-1/2 w-[7px] h-[8px] bg-black rounded-[32%]"></span>
                 )}
                 <span
                   tabIndex="0"

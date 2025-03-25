@@ -36,15 +36,15 @@ const Image = ({ image1, image2, layout }) => {
 
     if (layout === "columnTwo") {
         return (
-            <div className="flex flex-col lg:pl-[40px] max-md:h-[250px] lg:w-[360px] max-sm:h-[200px] md:w-[300px] max-md:flex-row max-md:gap-2 max-md:justify-center max-sm:h] max-md:items-center">
-                <div className="w-[220px] h-[160px] lg:w-[260px] lg:h-[185px] md:w-[250px] mb-2 max-sm:w-[180px] max-sm:h-[140px] max-sm:px-4 max-sm:object-contain shadow-lg">
+            <div className="flex flex-col lg:pl-[40px] lg:pt-[25px] max-md:h-[250px] lg:w-[360px] max-sm:h-[200px] md:w-[300px] max-md:flex-row max-md:gap-2 max-md:justify-center max-sm:h] max-md:items-center">
+                <div className="w-[220px] h-[160px] lg:w-[280px] lg:h-[190px] md:w-[250px] mb-2 max-sm:w-[180px] max-sm:h-[140px] max-sm:px-4 max-sm:object-contain shadow-lg">
                     <img
                         className="w-full h-full object-cover md:object-contain max-sm:object-contain"
                         src={image1}
                         alt="Two screenshots of the Javelin app. The left screen show a user landing page, from where they can select content based on their current motivation, rather than from an algorithm. The right screen shows a curated playlist screen with the first video (BLACK HOLES) ready to play. The page also shows the curator, with a descriptive text for the video, and a list of other video thumbnails for the rest of the curated playlist."
                     />
                 </div>
-                <div className="w-[220px] h-[150px] lg:w-[260px] lg:h-[160px] md:w-[250px] mb-6 lg:ml-[40px] max-sm:ml-0 max-sm:w-[160px] max-sm:h-[100px] shadow-lg">
+                <div className="w-[220px] h-[150px] lg:w-[270px] lg:h-[170px] md:w-[250px] mb-6 lg:ml-[40px] max-sm:ml-0 max-sm:w-[160px] max-sm:h-[100px] shadow-lg">
                     <img
                         className="w-full h-full object-contain max-sm:object-contain"
                         src={image2}
@@ -58,7 +58,7 @@ const Image = ({ image1, image2, layout }) => {
     if (layout === "One") {
         return (
             <div className="flex flex-col gap-4 lg:w-[360px] md:w-[300px] lg:pl-[80px] md:pr-[40px] max-md:flex max-md:justify-center max-md:items-center">
-                <div className="lg:w-[340px] lg:h-[395px] md:w-[200px] md:h-[330px] max-md:w-[22\40px] max-md:h-[280px] max-sm:w-[195px] max-sm:h-[230px] md:w-[360px] md:h-[350px]">
+                <div className="lg:w-[390px] lg:h-[450px] md:w-[200px] md:h-[330px] max-md:w-[22\40px] max-md:h-[280px] max-sm:w-[195px] max-sm:h-[230px] md:w-[360px] md:h-[350px]">
                     <img
                         className="w-full h-full md:ml-[-30px] lg:ml-[-40px] object-cover md:object-contain rounded-xl"
                         src={image1}
@@ -71,17 +71,17 @@ const Image = ({ image1, image2, layout }) => {
 
 
     return (
-        <div className="flex gap-4 lg:h-[300px] lg:w-[360px] md:w-[300px] max-md:flex max-md:mb-[20px] max-md:justify-center max-md:items-center max-md:gap-8 lg:mb-8 md:mb-4 max-sm:mb-6">
+        <div className="flex gap-4 lg:h-[320px] lg:w-[360px] md:w-[300px] max-md:flex max-md:mb-[20px] max-md:justify-center max-md:items-center max-md:gap-8 lg:mb-8 md:mb-4 max-sm:mb-6">
             <div className="lg:w-1/2 md:w-[130px]">
                 <img
-                    className="lg:h-[350px] max-md:h-[300px] md:h-[290px] max-sm:h-[250px] rounded-xl"
+                    className="lg:h-[370px] max-md:h-[300px] md:h-[290px] shadow-lg max-sm:h-[250px] rounded-xl"
                     src={image1}
                     alt="An image showing two side-by-side screenshots of the tado app. The left image shows the 'Balance' feature, currently focused on how water, as apposed to room heating, which the user can navigate to via a segmented control at the top of the page. A graph shoes the daily balance interventions alongside the temperature set point and cost of heating value, and the photovoltaic activity (PV). The second screen shows an orange screen with white text — the room heating screen, with the set point temperature and a large slider element for manual adjustments. Below the slider the user has the option to return 'to the schedule' via a button, and information about when their manually set set point will return to the schedule. "
                 />
             </div>
             <div className="lg:w-1/2 md:w-[130px] drop-shadow-lg">
                 <img
-                    className="lg:h-[350px] max-md:h-[300px] md:h-[290px] max-sm:h-[250px]  rounded-xl"
+                    className="lg:h-[370px] max-md:h-[300px] md:h-[290px] max-sm:h-[250px]  rounded-xl"
                     src={image2}
                     alt="An image showing two side-by-side screenshots of the tado app. The left image shows the 'Balance' feature, currently focused on how water, as apposed to room heating, which the user can navigate to via a segmented control at the top of the page. A graph shoes the daily balance interventions alongside the temperature set point and cost of heating value, and the photovoltaic activity (PV). The second screen shows an orange screen with white text — the room heating screen, with the set point temperature and a large slider element for manual adjustments. Below the slider the user has the option to return 'to the schedule' via a button, and information about when their manually set set point will return to the schedule. "
                 />
