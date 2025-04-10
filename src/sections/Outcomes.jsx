@@ -9,7 +9,7 @@ const Outcomes = () => {
                 </p>
             </div>
             <div className="mt-[20px] lg:mt-[80px] lg:py-8 lg:w-[720px] md:w-[550px] md:py-2 max-sm:relative lg:relative">
-                <div className="grid grid-cols-3 max-sm:grid-cols-2 lg:gap-[20px] md:gap-[40px] justify-items-center">
+                <div className="grid grid-cols-3 max-sm:grid-cols-2 lg:gap-[20px] gap-[50px] justify-items-center">
                     <div className="flex flex-col items-center">
                         <h2 className="lg:text-7xl font-[500] font-crimson max-md:text-4xl md:text-5xl max-sm:text-4xl">3
                             <span className="lg:text-6xl font-[500] font-crimson max-md:text-4xl md:text-5xl max-sm:text-4xl">M+</span>

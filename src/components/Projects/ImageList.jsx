@@ -1,12 +1,12 @@
 import Image from './Image';
-import balance from '../../assets/Balance (2).png';
-import grafics from '../../assets/grafics.png';
-import samsung from '../../assets/samsung.png';
-import mySpots from '../../assets/My Spots (1).png';
-import videoPlayer from '../../assets/videoPlayer.png';
+import balance from '../../assets/Balance.webp';
+import grafics from '../../assets/grafics.webp';
+import samsung from '../../assets/Samsung.webp';
+import mySpots from '../../assets/MySpots.webp';
+import videoPlayer from '../../assets/VideoPlayer.webp';
 import desktop from '../../assets/Desktop.png';
-import woman from '../../assets/HandPng.png';
-import manual from '../../assets/Manual.png';
+import woman from '../../assets/WomanHand.webp';
+import manual from '../../assets/Manual.webp';
 
 const ImageInfo = [
     {
@@ -38,6 +38,7 @@ const ImageInfo = [
     },
 ]
 
+// eslint-disable-next-line react/prop-types
 const ImageList = ({ index }) => {
     const image = ImageInfo[index - 1];
     return (
