@@ -89,6 +89,7 @@ const CardInfo = [
 
 ];
 
+// eslint-disable-next-line react/prop-types
 const CardList = ({ index }) => {
     const card = CardInfo[index - 1];
     return (
